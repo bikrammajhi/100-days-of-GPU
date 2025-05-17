@@ -1,7 +1,4 @@
-# 🌟 Day 002 of 100 Days of GPU: 🚀 Kicking Off the GPU Journey
-
-> 🎉 **Welcome to the first step of your GPU mastery challenge!**  
-> We're diving deep into the world of parallel computing, starting from the very basics — buckle up and let's make some cores roar! ⚡
+# 🌟 Day 002 of 100 Days of GPU
 
 ---
 
