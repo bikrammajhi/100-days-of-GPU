@@ -1,11 +1,8 @@
-# 🌟 Day 001 of 100 Days of GPU: 🚀 Kicking Off the GPU Journey
-
-> 🎉 **Welcome to the first step of your GPU mastery challenge!**  
-> We're diving deep into the world of parallel computing, starting from the very basics — buckle up and let's make some cores roar! ⚡
+# 🌟 Day 002 of 100 Days of GPU
 
 ---
 
-## 🧭 Day 001 Roadmap
+## 🧭 Day 002 Roadmap
 
 Here's what we'll explore today:
 
@@ -273,8 +270,8 @@ Where matrices A, B, C, and D can have different precisions (FP16 inputs and FP3
 
 ---
 
-## 🏁 Day 001 — Challenge Commentary Wrap-up
+## 🏁 Day 002 — Challenge Commentary Wrap-up
 
-🎤 *"And that's a wrap for Day 001 of 100 Days of GPU! From decoding the GPU's mind to understanding how memory flows and threads hustle — you've cracked open the engine of parallel power. See you tomorrow for Day 002, where we get hands-on with code!"*
+🎤 *"And that's a wrap for Day 002 of 100 Days of GPU! From decoding the GPU's mind to understanding how memory flows and threads hustle — you've cracked open the engine of parallel power. See you tomorrow for Day 002, where we get hands-on with code!"*
 
 > ✨ *Keep grinding. GPUs weren't built in a day — but mastery is built 1 warp at a time.* 💪
