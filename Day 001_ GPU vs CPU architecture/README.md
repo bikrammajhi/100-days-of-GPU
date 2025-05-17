@@ -1,4 +1,8 @@
-# 🚀 Processor Trends and Parallel Computing Explained 🚀
+# 🚀 Processor Trends and Parallel Computing 🚀
+🚀 Kicking Off the GPU Journey
+
+> 🎉 **Welcome to the first step of GPU mastery challenge!**  
+> We're diving deep into the world of parallel computing, starting from the very basics — buckle up and let's make some cores roar! ⚡
 
 ## 📈 Processor Evolution: From Moore's Law to Multi-core Era
 
