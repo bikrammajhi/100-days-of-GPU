@@ -18,7 +18,7 @@
 
 4. **Single-Thread Performance Plateau** 📉: With frequency stagnation came a flattening of **single-thread performance** gains, with modest improvements only coming from architectural optimizations and compiler advancements.
 
-![Processor_Trends](materials/images/Processor_Trends.png)
+![Processor_Trends](../materials/images/Chapter_01/Processor_Trends.png)
 
 ### The Multi-core Solution 🧠
 
@@ -30,14 +30,14 @@ As single-core performance improvements slowed, processor manufacturers shifted 
 
 **Focus: Minimize the time it takes to perform a single task**
 
-![Latency-Oriented Design](materials/images/Latency-Oriented%20Design.png)
+![Latency-Oriented Design](../materials/images/Chapter_01/Latency_Oriented_Design.png)
 
 
 ### Throughput-Oriented Design 🚂
 
 **Focus: Maximize the number of tasks that can be performed in a given time frame**
 
-![Throughput-Oriented Design](materials/images/Throughput-Oriented%20Design.png)
+![Throughput-Oriented Design](../materials/images/Chapter_01/Throughput_Oriented_Design.png)
 
 ## 🧩 CPU vs. GPU: Architectural Comparison
 
@@ -52,7 +52,7 @@ As single-core performance improvements slowed, processor manufacturers shifted 
 - ✅ Modest multithreading to hide short latency
 - ✅ High clock frequency
 
-![CPU Design](materials/images/CPU_Latency-Oriented%20Design.png)
+![CPU Design](../materials/images/Chapter_01/CPU.png)
 
 ### GPU: Throughput-Oriented Design 🌊
 
@@ -64,7 +64,7 @@ As single-core performance improvements slowed, processor manufacturers shifted 
 - ✅ Massive number of threads to hide very high latency
 - ✅ Moderate clock frequency
 
-![GPU Design](materials/images/GPU_Throughput-Oriented%20Design.png)
+![GPU Design](../materials/images/Chapter_01/GPU.png)
 
 ## 📱 GPU Origins and Evolution
 
