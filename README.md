@@ -18,3 +18,13 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
   - Shared memory, L1, L2 caches
   - Bank conflicts and memory coalescing
   - Tensor Cores and their matrix-multiplication acceleration
+
+### ✅ Day 002: CPU vs. GPU Architectures & Parallelism 
+
+- Wrote first 'Hello World' programme in CUDA 
+- Processor Trends and Evolution
+- Reviewed Moore’s Law and its impact on transistor scaling.
+- Compared Latency-Oriented Design (CPU) vs. Throughput-Oriented Design (GPU).
+- Deep dive into CPU and GPU design:
+- History of GPUs: From graphics to general-purpose computing.
+- Explored the limitations of parallelization.
