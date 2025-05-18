@@ -18,7 +18,8 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 
 ### ✅ Day 002:  GPU Architecture Fundamentals 
 
-- Wrote first 'Hello World' programme in CUDA
+- Wrote first 'Hello World' programme in CUDA [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18CxHw1sahD4hhum3XNF4ANDAdwnr5jva?usp=sharing)
+
 - Studied the evolution of GPU architectures: from Fermi → Kepler → Pascal → Volta → Turing → Ampere.
 - Learned about:
   - SMs (Streaming Multiprocessors)
