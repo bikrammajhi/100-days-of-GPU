@@ -48,7 +48,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 * Learned about asynchronous kernel execution and synchronization
 
 ### ✅ Day 004: Multidimensional Grids and Data
-* Implemented RGB to Grayscale conversion using 2D thread organization [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1O_sxGy79ORW3GVuvi3BCr-jsdP9sDVgs?usp=sharing) using 2D thread organization
+* Implemented RGB to Grayscale conversion [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1O_sxGy79ORW3GVuvi3BCr-jsdP9sDVgs?usp=sharing) using 2D thread organization
 * Explored CUDA's multidimensional grid capabilities (up to 3D)
 * Learned key multidimensional indexing techniques:
   * Using `blockIdx.{x,y}` and `threadIdx.{x,y}` for 2D addressing
