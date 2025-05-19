@@ -39,10 +39,19 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
   * `cudaMalloc` for device memory allocation
   * `cudaMemcpy` for host-device data transfers
   * `cudaFree` for releasing GPU memory
-* Mastered CUDA kernel fundamentals:
+* Learned CUDA kernel fundamentals:
   * Thread/block organization in grids
   * Using thread indices with `blockDim.x*blockIdx.x + threadIdx.x`
   * Handling boundary conditions with ceiling division
 * Implemented proper error checking with `cudaGetLastError()` and `cudaGetErrorString()`
 * Explored function qualifiers: `__global__`, `__device__`, and `__host__`
 * Learned about asynchronous kernel execution and synchronization
+
+### ✅ Day 004: Multidimensional Grids and Data
+* Implemented RGB to Grayscale conversion using 2D thread organization [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1O_sxGy79ORW3GVuvi3BCr-jsdP9sDVgs?usp=sharing) using 2D thread organization
+* Explored CUDA's multidimensional grid capabilities (up to 3D)
+* Learned key multidimensional indexing techniques:
+  * Using `blockIdx.{x,y}` and `threadIdx.{x,y}` for 2D addressing
+  * Converting between 2D coordinates and linear memory
+* Handled boundary conditions in multidimensional kernels
+* Fixed CUDA version mismatch on Google Colab
