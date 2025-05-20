@@ -18,7 +18,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 
 ### ✅ Day 002:  GPU Architecture Fundamentals 
 
-- Wrote first 'Hello World' [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18CxHw1sahD4hhum3XNF4ANDAdwnr5jva?usp=sharing) programme in CUDA
+- Wrote first 'Hello World' [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/ddd45d3d27cd7a05c0cdd3174dc0f578/hello-world-in-cuda.ipynb) programme in CUDA
 
 - Studied the evolution of GPU architectures: from Fermi → Kepler → Pascal → Volta → Turing → Ampere.
 - Learned about:
@@ -31,7 +31,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 
 ### ✅ Day 003: Vector Addition
 
-* Implemented vector addition [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/14A39l716HPIUHQhJLtd2xsYLI60JZH90?usp=sharing) - the "Hello World!" of data parallel programming
+* Implemented vector addition [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/0e86a95d1a010056c70ee1decdb2275e/vector-addition-in-cuda.ipynb) - the "Hello World!" of data parallel programming
 * Studied different types of parallelism:
   * Task Parallelism vs Data Parallelism
   * Why GPUs excel at data-parallel tasks
@@ -48,7 +48,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 * Learned about asynchronous kernel execution and synchronization
 
 ### ✅ Day 004: Multidimensional Grids and Data
-* Implemented RGB to Grayscale conversion [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1O_sxGy79ORW3GVuvi3BCr-jsdP9sDVgs?usp=sharing) using 2D thread organization
+* Implemented RGB to Grayscale conversion [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/b28ce2e01b465c6e1dcf5124a540ac04/rgb2gray-in-cuda.ipynb) using 2D thread organization
 * Explored CUDA's multidimensional grid capabilities (up to 3D)
 * Learned key multidimensional indexing techniques:
   * Using `blockIdx.{x,y}` and `threadIdx.{x,y}` for 2D addressing
@@ -57,6 +57,6 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 * Fixed CUDA version mismatch on Google Colab
 
 ### ✅ Day 005: Image Blur Processing & Performance Analysis
-* Implemented 3×3 average filter blur operation [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1k3Rpsv2z2v0jgKRaZBomvPup_4vtZnZ4?usp=sharing) using CUDA
+* Implemented 3×3 average filter blur operation [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/e4363e9116a909dcde94013aac3d6bcd/image-blur-with-cuda.ipynb) using CUDA
 * Analyzed memory transfer vs. computation performance (H2D: 0.26ms, kernel: 0.30ms, D2H: 0.66ms)
 * Explored optimization strategies including shared memory and memory access patterns
