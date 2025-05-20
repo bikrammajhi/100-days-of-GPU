@@ -55,3 +55,8 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
   * Converting between 2D coordinates and linear memory
 * Handled boundary conditions in multidimensional kernels
 * Fixed CUDA version mismatch on Google Colab
+
+### ✅ Day 005: Image Blur Processing & Performance Analysis
+* Implemented 3×3 average filter blur operation [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1k3Rpsv2z2v0jgKRaZBomvPup_4vtZnZ4?usp=sharing) using CUDA
+* Analyzed memory transfer vs. computation performance (H2D: 0.26ms, kernel: 0.30ms, D2H: 0.66ms)
+* Explored optimization strategies including shared memory and memory access patterns
