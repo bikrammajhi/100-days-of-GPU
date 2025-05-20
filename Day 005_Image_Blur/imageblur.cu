@@ -329,17 +329,6 @@ int main(int argc, char** argv) {
         printf("\n");
     }
     
-    // Validation - calculate sum before and after to verify blur operation
-    unsigned long sum_original = 0;
-    unsigned long sum_blurred = 0;
-    for (unsigned int i = 0; i < width * height; i++) {
-        sum_original += image[i];
-        sum_blurred += blurred[i];
-    }
-    printf("\nSum of original image: %lu\n", sum_original);
-    printf("Sum of blurred image: %lu\n", sum_blurred);
-    printf("Difference: %ld (should be small due to edge effects)\n", 
-           (long)sum_original - (long)sum_blurred);
     
     // Free memory
     printf("\nCleaning up resources...\n");
