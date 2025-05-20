@@ -165,7 +165,7 @@ Want to improve performance further? Consider:
    dim3 blockSize(32, 8, 1);  // Try different configurations
    ```
    - Tesla T4 has 40 SMs with 64 warps each
-   - Optimal occupancy calculation: $\frac{\text{# active warps}}{\text{max warps per SM}}$
+   - Optimal occupancy calculation: $\frac{\text{active warps}}{\text{max warps per SM}}$
    - Different block sizes affect register usage and shared memory pressure
 
 5. **🔄 Overlap computation and transfers** with CUDA streams
