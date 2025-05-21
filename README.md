@@ -60,3 +60,10 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 * Implemented 3×3 average filter blur operation [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/e4363e9116a909dcde94013aac3d6bcd/image-blur-with-cuda.ipynb) using CUDA
 * Analyzed memory transfer vs. computation performance (H2D: 0.26ms, kernel: 0.30ms, D2H: 0.66ms)
 * Explored optimization strategies including shared memory and memory access patterns
+
+### ✅ Day 006: CUDA Programming Model & Runtime API
+* Explored CUDA's scalable parallelism with thread hierarchy (threads, blocks, grids)
+* Learned advanced features including Grid Block Clusters, Thread Block Clusters (9.0) and Asynchronous SIMT (8.0+)
+* Compute Capability (SM version): Features supported by the GPU hardware
+* Memory management techniques (linear, pitched, 3D) and their access patterns
+* Explored ways of accessing global variables
