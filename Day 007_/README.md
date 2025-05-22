@@ -1,4 +1,4 @@
-# CUDA L2 Cache Memory Management - Complete Guide
+# CUDA L2 Cache Memory Management 
 
 ## 🎯 Quick Overview
 
@@ -15,19 +15,19 @@
 │                    MEMORY ACCESS TYPES                      │
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
-│  🔄 PERSISTING ACCESS                                       │
+│  🔄 PERSISTING ACCESS                                      │
 │  ├─ Data used repeatedly (matrix multiply, iterative algos) │
-│  ├─ Should stay in L2 cache longer                         │
+│  ├─ Should stay in L2 cache longer                          │
 │  └─ Higher priority for cache retention                     │
 │                                                             │
 │  📥 STREAMING ACCESS                                        │
-│  ├─ Data used once (file I/O, initial data load)          │
-│  ├─ Should be evicted quickly                              │
-│  └─ Lower priority for cache retention                     │
+│  ├─ Data used once (file I/O, initial data load)            │
+│  ├─ Should be evicted quickly                               │
+│  └─ Lower priority for cache retention                      │
 │                                                             │
 │  ⚖️ NORMAL ACCESS                                           │
 │  ├─ Default behavior                                        │
-│  └─ Used to reset persisting status                        │
+│  └─ Used to reset persisting status                         │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -44,9 +44,9 @@
 │  ┌─────────────────┐  ┌───────────────────────────────────┐ │
 │  │   SET-ASIDE     │  │        NORMAL L2 CACHE            │ │
 │  │   PORTION       │  │                                   │ │
-│  │                 │  │  • Used by streaming accesses    │ │
-│  │ • Persisting    │  │  • Used by normal accesses       │ │
-│  │   accesses get  │  │  • Can use set-aside when empty  │ │
+│  │                 │  │  • Used by streaming accesses     │ │
+│  │ • Persisting    │  │  • Used by normal accesses        │ │
+│  │   accesses get  │  │  • Can use set-aside when empty   │ │
 │  │   priority      │  │                                   │ │
 │  │ • Up to 75% of  │  │                                   │ │
 │  │   total L2      │  │                                   │ │
@@ -61,7 +61,7 @@
 
 ### Step 1: Check Device Capabilities
 
-```c
+```cpp
 cudaDeviceProp prop;
 cudaGetDeviceProperties(&prop, device_id);
 
@@ -78,7 +78,7 @@ printf("Max Window Size: %zu bytes\n", prop.accessPolicyMaxWindowSize);
 
 ### Step 2: Configure Set-Aside Cache
 
-```c
+```cpp
 // Set aside 75% of L2 cache for persisting accesses
 size_t size = min(int(prop.l2CacheSize * 0.75), prop.persistingL2CacheMaxSize);
 cudaDeviceSetLimit(cudaLimitPersistingL2CacheSize, size);
@@ -90,7 +90,7 @@ cudaDeviceSetLimit(cudaLimitPersistingL2CacheSize, size);
 
 ### The Access Policy Window Structure
 
-```c
+```cpp
 cudaStreamAttrValue stream_attribute;
 stream_attribute.accessPolicyWindow.base_ptr  = ptr;           // Start address
 stream_attribute.accessPolicyWindow.num_bytes = window_size;   // Size of region
@@ -105,12 +105,12 @@ stream_attribute.accessPolicyWindow.missProp  = cudaAccessPropertyStreaming;
 hitRatio = 0.6 (60% persisting, 40% streaming)
 
 Memory Window [32KB]:
-┌────────────────────────────────────────┐
+┌────────────────────────────────────────            ┐
 │ 🔄🔄🔄🔄🔄🔄📥📥📥📥📥📥🔄🔄🔄🔄🔄🔄📥📥 │
-│                                        │
-│ 🔄 = Persisting (60% - random selection)│
-│ 📥 = Streaming (40% - random selection) │
-└────────────────────────────────────────┘
+│                                                    │
+│ 🔄 = Persisting (60% - random selection)           │
+│ 📥 = Streaming (40% - random selection)            │
+└────────────────────────────────────────            ┘
 
 L2 Set-aside [16KB]:
 ┌──────────────────────┐
@@ -134,7 +134,7 @@ L2 Set-aside [16KB]:
 
 ### Scenario: Matrix Operations with Repeated Data Access
 
-```c
+```cpp
 #include <cuda_runtime.h>
 
 void optimized_matrix_operations() {
@@ -191,35 +191,67 @@ void optimized_matrix_operations() {
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  🎯 hitRatio = 1.0                                          │
-│  ├─ Use when: Single kernel, data fits in set-aside        │
+│  ├─ Use when: Single kernel, data fits in set-aside         │
 │  ├─ Effect: Maximum caching attempt                         │
-│  └─ Risk: Cache thrashing if data > set-aside size         │
+│  └─ Risk: Cache thrashing if data > set-aside size          │
 │                                                             │
 │  ⚖️ hitRatio = 0.5-0.8                                      │
-│  ├─ Use when: Multiple concurrent kernels                  │
-│  ├─ Effect: Balanced caching, reduces competition          │
-│  └─ Best for: Most production scenarios                    │
+│  ├─ Use when: Multiple concurrent kernels                   │
+│  ├─ Effect: Balanced caching, reduces competition           │
+│  └─ Best for: Most production scenarios                     │
 │                                                             │
 │  🎲 hitRatio = 0.2-0.4                                      │
-│  ├─ Use when: Many concurrent streams                      │
-│  ├─ Effect: Light caching, minimal interference            │
-│  └─ Good for: High-concurrency applications                │
+│  ├─ Use when: Many concurrent streams                       │
+│  ├─ Effect: Light caching, minimal interference             │
+│  └─ Good for: High-concurrency applications                 │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ### Example: Managing Multiple Concurrent Streams
 
-```c
-// Problem: Two 16KB windows competing for 16KB set-aside cache
-// Bad approach (causes thrashing):
-stream1_attr.accessPolicyWindow.hitRatio = 1.0;  // Wants all 16KB
-stream2_attr.accessPolicyWindow.hitRatio = 1.0;  // Also wants all 16KB
+When using **multiple CUDA streams**, each can be configured with **memory access policy hints**. These hints help the GPU's hardware-level **L2 cache management** and **streaming memory prioritization** optimize performance by understanding how each stream will access memory.
 
-// Good approach (cooperative sharing):
-stream1_attr.accessPolicyWindow.hitRatio = 0.5;  // Uses ~8KB
-stream2_attr.accessPolicyWindow.hitRatio = 0.5;  // Uses ~8KB
+One such hint is the **access policy window**, which tells the GPU **how much of the L2 cache** the stream expects to use and **how aggressively** it wants to keep its data cached.
+
+---
+
+### ❌ **Bad Approach: Full Cache Contention**
+
+```cpp
+stream1_attr.accessPolicyWindow.hitRatio = 1.0;
+stream2_attr.accessPolicyWindow.hitRatio = 1.0;
 ```
+
+#### ✅ Meaning:
+
+* `hitRatio = 1.0` tells the GPU that this stream wants **100% cache residency** for its working set (i.e., "please keep everything I touch in cache").
+* Both `stream1` and `stream2` are configured to demand **all of the 16KB set-aside cache**.
+
+#### ❌ Problem:
+
+* If **both streams demand the full cache**, but **only 16KB** is available in total, they will **evict each other's data** continuously.
+* This leads to **cache thrashing**, where neither stream gets the cache residency it wants, causing **cache misses** and **performance degradation**.
+
+---
+
+### ✅ **Good Approach: Cooperative Sharing**
+
+```cpp
+stream1_attr.accessPolicyWindow.hitRatio = 0.5;
+stream2_attr.accessPolicyWindow.hitRatio = 0.5;
+```
+
+#### ✅ Meaning:
+
+* Each stream now signals that it only needs **about 50% cache residency**.
+* Effectively, both streams are saying: “I’m okay using \~8KB of the 16KB cache.”
+
+#### ✅ Benefit:
+
+* With a **cooperative policy**, the cache is **shared fairly**.
+* Reduces cache eviction between streams.
+* Improves **overall hit rate** and avoids **thrashing**.
 
 ---
 
@@ -233,19 +265,19 @@ stream2_attr.accessPolicyWindow.hitRatio = 0.5;  // Uses ~8KB
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │  1️⃣ TARGETED RESET                                          │
-│  ├─ Method: Set access property to cudaAccessPropertyNormal │
-│  ├─ Scope: Specific memory region                          │
-│  └─ Use: When you know exactly what to reset               │
+│  ├─ Method: Set access property to `cudaAccessPropertyNormal` │
+│  ├─ Scope: Specific memory region                           │
+│  └─ Use: When you know exactly what to reset                │
 │                                                             │
 │  2️⃣ GLOBAL RESET                                            │
-│  ├─ Method: cudaCtxResetPersistingL2Cache()                │
-│  ├─ Scope: All persisting cache lines                     │
+│  ├─ Method: `cudaCtxResetPersistingL2Cache()   `              │
+│  ├─ Scope: All persisting cache lines                       │
 │  └─ Use: Between different algorithm phases                 │
 │                                                             │
 │  3️⃣ AUTOMATIC RESET                                         │
-│  ├─ Method: Hardware automatic (time-based)                │
-│  ├─ Scope: Unused persisting lines                        │
-│  └─ Use: AVOID - timing is unpredictable                   │
+│  ├─ Method: Hardware automatic (time-based)                 │
+│  ├─ Scope: Unused persisting lines                          │
+│  └─ Use: AVOID - timing is unpredictable                    │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -256,8 +288,8 @@ stream2_attr.accessPolicyWindow.hitRatio = 0.5;  // Uses ~8KB
 
 ### Environment Restrictions
 
-| Configuration | L2 Set-Aside Support | Configuration Method |
-|---------------|---------------------|---------------------|
+| Configuration | L2 Set-Aside Support |  Configuration Method  |
+|---------------|----------------------|------------------------|
 | **Normal Mode** | ✅ Fully supported | `cudaDeviceSetLimit()` |
 | **MIG Mode** | ❌ Disabled | N/A |
 | **MPS Mode** | ⚠️ Limited | Environment variable only |
@@ -313,7 +345,7 @@ export CUDA_DEVICE_DEFAULT_PERSISTING_L2_CACHE_PERCENTAGE_LIMIT=75
 
 ## 📚 API Quick Reference
 
-```c
+```cpp
 // Query device properties
 cudaGetDeviceProperties(&prop, device_id);
 
