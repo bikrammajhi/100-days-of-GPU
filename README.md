@@ -63,6 +63,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 
 ### ✅ Day 006: CUDA Programming Model & Runtime API
 * Explored CUDA's scalable parallelism with thread hierarchy (threads, blocks, grids)
+* Implemented Naive Matrix Multiplication
 * Learned advanced features including Grid Block Clusters, Thread Block Clusters (9.0) and Asynchronous SIMT (8.0+)
 * Compute Capability (SM version): Features supported by the GPU hardware
 * Memory management techniques (linear, pitched, 3D) and their access patterns
