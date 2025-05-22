@@ -1,4 +1,4 @@
-# 🚀 Day 006 of 100 Days of GPU : CUDA L2 Cache Memory Management 
+# 🚀 Day 007 of 100 Days of GPU : CUDA L2 Cache Memory Management 
 
 ## 🎯 Quick Overview
 
