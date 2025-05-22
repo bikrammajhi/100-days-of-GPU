@@ -8,6 +8,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 
 ## 📅 Progress Log
 
+
 ### ✅ Day 001: CPU vs. GPU Architectures & Parallelism 
 - Processor Trends and Evolution
 - Reviewed Moore’s Law and its impact on transistor scaling.
@@ -63,7 +64,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 
 ### ✅ Day 006: CUDA Programming Model & Runtime API
 * Explored CUDA's scalable parallelism with thread hierarchy (threads, blocks, grids)
-* Implemented Naive Matrix Multiplication [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20006_Naive_MatMul/matmul.cu)
+* Implemented Naive Matrix Multiplication [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20006_Naive_MatMul/matmul.cu)
 * Learned advanced features including Grid Block Clusters, Thread Block Clusters (9.0) and Asynchronous SIMT (8.0+)
 * Compute Capability (SM version): Features supported by the GPU hardware
 * Memory management techniques (linear, pitched, 3D) and their access patterns
