@@ -76,6 +76,161 @@ printf("Max Persisting L2: %zu bytes\n", prop.persistingL2CacheMaxSize);
 printf("Max Window Size: %zu bytes\n", prop.accessPolicyMaxWindowSize);
 ```
 
+
+---
+
+#### 🔍 1. `prop.l2CacheSize`: L2 Cache Size
+
+```cpp
+printf("L2 Cache Size: %zu bytes\n", prop.l2CacheSize);
+```
+
+##### ❓ What is L2 Cache?
+
+The **L2 cache** is a shared cache level between all SMs (Streaming Multiprocessors) in a GPU. It's larger than L1 but slower. Its job is to:
+
+* **Reduce global memory traffic**
+* Cache frequently accessed data
+* Improve memory coalescing efficiency
+
+##### 📌 Example:
+
+Suppose your GPU has:
+
+```cpp
+prop.l2CacheSize = 4194304 // 4 MB
+```
+
+This means:
+
+* You have **4 MB** of L2 cache **shared across all SMs**.
+* Any global memory read/write may go through this cache, improving latency.
+
+##### 🚨 Limitation:
+
+The **entire L2 cache** is **not always usable** for your specific stream or kernel — it is shared by the whole GPU.
+
+---
+
+#### 🔐 2. `prop.persistingL2CacheMaxSize`: Max Persisting L2 Cache Size
+
+```cpp
+printf("Max Persisting L2: %zu bytes\n", prop.persistingL2CacheMaxSize);
+```
+
+##### ❓ What is "Persisting L2"?
+
+**Persisting L2 Cache** is a portion of the L2 cache that **you can reserve** so that **certain data stays longer** (i.e., not evicted easily).
+
+You can use `cudaDeviceSetLimit()` to set how much of this max should be used:
+
+```cpp
+cudaDeviceSetLimit(cudaLimitPersistingL2CacheSize, bytes);
+```
+
+##### 🧠 Why is this useful?
+
+If you’re:
+
+* Reusing the **same data across multiple kernel launches**
+* Reading constants or model weights again and again
+* Want to avoid costly global memory reads
+
+Then you can **mark that data** to remain in cache longer.
+
+### 🧪 Example:
+
+```cpp
+prop.persistingL2CacheMaxSize = 3145728 // 3 MB
+```
+
+This means:
+
+* You can **reserve up to 3MB** of L2 cache for persistently accessed data.
+* If you try to reserve more than this, `cudaDeviceSetLimit()` will return an error.
+
+---
+
+#### 📐 3. `prop.accessPolicyMaxWindowSize`: Max Access Policy Window Size
+
+```cpp
+printf("Max Window Size: %zu bytes\n", prop.accessPolicyMaxWindowSize);
+```
+
+##### ❓ What is an "Access Policy Window"?
+
+This is a feature that allows you to tell CUDA:
+
+* "This region of memory will be used heavily — please optimize access."
+* "I want this region to be **cached persistently** in L2."
+
+This is done using:
+
+```cpp
+cudaStreamAttrValue attr = {};
+attr.accessPolicyWindow.base_ptr = ptr;
+attr.accessPolicyWindow.num_bytes = N; // ← THIS is what this field limits
+```
+
+##### 🔒 Max Window Size
+
+This field tells you the **maximum number of bytes** you can define in an access policy window.
+
+##### 📌 Example:
+
+```cpp
+prop.accessPolicyMaxWindowSize = 2097152 // 2 MB
+```
+
+This means:
+
+* Your **window** of memory that you want CUDA to cache persistently **cannot exceed 2MB** in size.
+* You must break larger regions into chunks or reduce window size.
+
+##### 🧠 Why is this important?
+
+If you're trying to cache large matrices or datasets, knowing the **maximum window size** tells you **how much of that data can be kept persistent at a time**.
+
+---
+
+### 🔧 Putting It All Together
+
+Suppose your outputs are:
+
+```cpp
+L2 Cache Size:           4194304 bytes   // 4 MB total
+Max Persisting L2:       3145728 bytes   // You can reserve up to 3 MB
+Max Access Window Size:  2097152 bytes   // A window can be at most 2 MB
+```
+
+Then:
+
+* You can set aside 3MB of the L2 cache for persistent storage.
+* You can only request a persistent caching window of at most 2MB per stream attribute.
+* You can potentially define **multiple windows** within the reserved 3MB region.
+
+---
+
+#### 🔄 Visual Analogy
+
+Think of your L2 cache as a library of 4 shelves (4 MB). You can:
+
+* Reserve 3 of those shelves (3 MB) for **important books** (persistent data).
+* But you can only mark books in one go if the book collection is ≤ 2 shelves (max window).
+* If your collection is too big, break it down into multiple smaller marked sections.
+
+---
+
+#### 📌 Summary Table
+
+| Field                            | Meaning                                                   | Typical Size |
+| -------------------------------- | --------------------------------------------------------- | ------------ |
+| `prop.l2CacheSize`               | Total L2 cache on the GPU                                 | 4–16 MB      |
+| `prop.persistingL2CacheMaxSize`  | Max part of L2 you can reserve for persistent access      | < L2 size    |
+| `prop.accessPolicyMaxWindowSize` | Max size of memory region you can mark for persist access | \~1–4 MB     |
+
+---
+
 ### Step 2: Configure Set-Aside Cache
 
 ```cpp
