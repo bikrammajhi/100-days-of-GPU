@@ -366,5 +366,3 @@ cudaDeviceGetLimit(&current_size, cudaLimitPersistingL2CacheSize);
 ```
 
 ---
-
-*This guide covers CUDA L2 Cache Memory Management for compute capability 8.0+ devices with CUDA 11.0+. Always profile your specific use case for optimal performance gains.*
