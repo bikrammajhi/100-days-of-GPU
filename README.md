@@ -81,6 +81,17 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 *  L2 Cache Reset Options
 *  L2 Set-Aside Layout
 
+### ✅ Day 008: CUDA Memory Transfer Performance
+* Implemented CUDA memory transfer optimizations using Pinned and Unified Memory
+* Understood Memory Types (Pageable, Pinned, Device, Unified)
+* Analyzed Transfer Bandwidths and PCIe Efficiency
+* Applied Async Transfer Techniques
+* Optimized with Batching and Memory Pools
+* Visualized Performance Bottlenecks
+
+
+
+
  
 
 
