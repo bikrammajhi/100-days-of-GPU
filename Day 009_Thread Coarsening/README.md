@@ -1,4 +1,4 @@
-#🌟 Day 009 of 100 Days of GPU: CUDA Page-Locked Host Memory
+# 🌟 Day 009 of 100 Days of GPU: CUDA Page-Locked Host Memory
 
 ## Table of Contents
 1. [Introduction](#introduction)
