@@ -81,7 +81,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 *  L2 Cache Reset Options
 *  L2 Set-Aside Layout
 
-### ✅ Day 008: CUDA Memory Transfer Performance
+### ✅ Day 008: CUDA Memory Transfer Performance [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20008_Data_Transfer%20_Benchmark)
 * Implemented CUDA memory transfer optimizations using Pinned and Unified Memory [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20008_Data_Transfer%20_Benchmark/transfer_benchmarking.cu)
 * Understood Memory Types (Pageable, Pinned, Device, Unified)
 * Analyzed Transfer Bandwidths and PCIe Efficiency
@@ -89,12 +89,18 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 * Optimized with Batching and Memory Pools
 * Visualized Performance Bottlenecks
 
-### ✅ Day 009: Page-Locked Host Memory and Thread Coarsening
+### ✅ Day 009: Page-Locked Host Memory and Thread Coarsening [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20009_Thread%20Coarsening)
 * Impliemented Thread Coarsening Matrix Mulitplication [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20009_Thread%20Coarsening)
 * Page-Locked Host Memory
 * Portable Memory
 * Write-Combining Memory
 * Mapped Memory
+
+### ✅ Day 010: CUDA Memory Synchronization Domains [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20010_Memory%20Synchronization%20Domains)
+* Implemented Vector Addition kernel using Triton [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20010_Memory%20Synchronization%20Domains/vec_add.py)
+* Memory Fence Interference
+* Isolating Traffic with Domains
+* Using Domains in CUDA
 
 
 
