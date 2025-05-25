@@ -90,7 +90,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 * Visualized Performance Bottlenecks
 
 ### ✅ Day 009: Page-Locked Host Memory and Thread Coarsening
-* Impliemented Thread Coarsening Matrix Mulitplication [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20009_Thread%20Coarsening)
+* Impliemented Thread Coarsening Matrix Mulitplication [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20009_Thread%20Coarsening)
 * Page-Locked Host Memory
 * Portable Memory
 * Write-Combining Memory
