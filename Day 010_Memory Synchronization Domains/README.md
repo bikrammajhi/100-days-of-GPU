@@ -1,4 +1,4 @@
-# 🚀 Day 009: CUDA Memory Synchronization Domains 🚀
+# 🚀 Day 010: CUDA Memory Synchronization Domains 🚀
 
 ## 🚦 6.2.7 Memory Synchronization Domains — Overview
 
