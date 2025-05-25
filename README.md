@@ -82,7 +82,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 *  L2 Set-Aside Layout
 
 ### ✅ Day 008: CUDA Memory Transfer Performance
-* Implemented CUDA memory transfer optimizations using Pinned and Unified Memory
+* Implemented CUDA memory transfer optimizations using Pinned and Unified Memory [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20008_Data_Transfer%20_Benchmark/transfer_benchmarking.cu)
 * Understood Memory Types (Pageable, Pinned, Device, Unified)
 * Analyzed Transfer Bandwidths and PCIe Efficiency
 * Applied Async Transfer Techniques
