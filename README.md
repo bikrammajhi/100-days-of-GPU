@@ -72,7 +72,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 * Explored ways of accessing global variables
 
 ### ✅ Day 007: L2 Cache and Shared memory [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20007_L2%20and%20Shared%20Memory)
-* Implemented tiled-Matrix Multiplication using Shared memory[![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20007_L2%20and%20Shared%20Memory/matmul.cu)
+* Implemented tiled-Matrix Multiplication using Shared memory [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20007_L2%20and%20Shared%20Memory/matmul.cu)
 *  L2 Cache Control
 *  Memory Access Patterns
 *  L2 Cache Architecture
