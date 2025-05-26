@@ -1,4 +1,3 @@
-# 100-days-of-Triton
 # 🚀 CUDA Streams and Concurrent Execution - Complete Guide
 
 ## Table of Contents
