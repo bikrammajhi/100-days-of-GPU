@@ -20,7 +20,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 
 ### ✅ Day 002:  GPU Architecture Fundamentals [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20002_Hello_GPU)
 
-- Wrote first 'Hello World' [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/ddd45d3d27cd7a05c0cdd3174dc0f578/hello-world-in-cuda.ipynb) programme in CUDA
+- Wrote first 'Hello World' [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/59ee47f2dc6a04fb79f8fa15d498a4bf/hello-world-in-cuda.ipynb) programme in CUDA
 
 - Studied the evolution of GPU architectures: from Fermi → Kepler → Pascal → Volta → Turing → Ampere.
 - Learned about:
