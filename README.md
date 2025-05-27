@@ -4,16 +4,8 @@ Welcome to my **100 Days of GPU** journey! This repository will serve as a publi
 
 The goal is to gain both theoretical and hands-on understanding of how GPUs work and how to fully leverage their power for high-performance computing.
 
-# Progress Table:  
+# Progress Table  
 [![YouTube](https://img.shields.io/badge/YouTube-CS149-FF0000?logo=youtube)](https://www.youtube.com/playlist?list=PLoROMvodv4rMp7MTFr4hQsDEcX7Bx6Odp) [![YouTube](https://img.shields.io/badge/YouTube-PMPP-FF0000?logo=youtube)](https://www.youtube.com/playlist?list=PLRRuQYjFhpmubuwx-w8X964ofVkW1T8O4) [![CUDA](https://img.shields.io/badge/CUDA-C++%20Guide-76B900?logo=nvidia)](https://docs.nvidia.com/cuda/cuda-c-programming-guide/) [![PMPP](https://img.shields.io/badge/Book-PMPP-blue?logo=bookstack)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/materials/Wen-mei%20W.%20Hwu%2C%20David%20B.%20Kirk%2C%20Izzat%20El%20Hajj%20-%20Programming%20Massively%20Parallel%20Processors.%20A%20Hands-on%20Approach-Elsevier%20(2023).pdf) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/59ee47f2dc6a04fb79f8fa15d498a4bf/hello-world-in-cuda.ipynb) [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/xlite-dev/LeetCUDA)
-
-[![GitHub](https://img.shields.io/badge/GitHub-LeetCUDA-181717?logo=github)](https://github.com/xlite-dev/LeetCUDA) [![GitHub](https://img.shields.io/badge/GitHub-CUDA%20Optimizations-181717?logo=github)](https://github.com/BBuf/how-to-optim-algorithm-in-cuda) [![Awesome](https://img.shields.io/badge/Awesome-CUDA%20&%20HPC-ff6b6b?logo=awesome-lists)](https://github.com/coderonion/awesome-cuda-and-hpc) [![Awesome](https://img.shields.io/badge/Awesome-DiT%20Inference-4ecdc4?logo=awesome-lists)](https://github.com/xlite-dev/Awesome-DiT-Inference) [![GitHub](https://img.shields.io/badge/GitHub-Stable%20Diffusion%20C++-181717?logo=github)](https://github.com/leejet/stable-diffusion.cpp) 
-
-[![Blog](https://img.shields.io/badge/Blog-Tensor%20Core%20MatMul-e91e63?logo=hashnode)](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) 
-[![Blog](https://img.shields.io/badge/Blog-MMA%20MatMul-2196f3?logo=medium)](https://www.spatters.ca/mma-matmul) 
-[![Blog](https://img.shields.io/badge/Blog-CUDA%20MatMul%20Optimization-00d4aa?logo=dev.to)](https://siboehm.com/articles/22/CUDA-MMM) 
-[![Substack](https://img.shields.io/badge/Substack-Outperforming%20cuBLAS-ff6b35?logo=substack)](https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog) 
-[![YouTube](https://img.shields.io/badge/YouTube-Outperforming%20cuBLAS-FF0000?logo=youtube)](https://www.youtube.com/watch?v=ErTmTCRP1_U) 
 
 
 | Day | 📋 Topic | 🎯 Key Learning Areas | 💻 Implementation | 🔗 Links |
@@ -28,6 +20,15 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 | **008** | 🚄 **Memory Transfer Performance** | • Memory types (Pageable, Pinned, Unified)<br/>• Transfer bandwidth analysis<br/>• PCIe efficiency optimization<br/>• Async transfer techniques<br/>• Batching and memory pools | CUDA memory transfer benchmarking | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20008_Data_Transfer%20_Benchmark) |
 | **009** | 🔄 **Page-Locked Memory & Thread Coarsening** | • Page-locked host memory benefits<br/>• Portable and write-combining memory<br/>• Mapped memory techniques<br/>• Thread coarsening optimization strategies | Thread Coarsening Matrix Multiplication | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20009_Thread%20Coarsening) |
 | **010** | 🔄 **Memory Synchronization Domains** | • Memory fence interference handling<br/>• Traffic isolation with domains<br/>• Domain usage in CUDA<br/>• Introduction to Triton programming | Vector Addition with Triton | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20010_Memory%20Synchronization%20Domains) |
+
+# References:
+[![GitHub](https://img.shields.io/badge/GitHub-LeetCUDA-181717?logo=github)](https://github.com/xlite-dev/LeetCUDA) [![GitHub](https://img.shields.io/badge/GitHub-CUDA%20Optimizations-181717?logo=github)](https://github.com/BBuf/how-to-optim-algorithm-in-cuda) [![Awesome](https://img.shields.io/badge/Awesome-CUDA%20&%20HPC-ff6b6b?logo=awesome-lists)](https://github.com/coderonion/awesome-cuda-and-hpc) [![Awesome](https://img.shields.io/badge/Awesome-DiT%20Inference-4ecdc4?logo=awesome-lists)](https://github.com/xlite-dev/Awesome-DiT-Inference) [![GitHub](https://img.shields.io/badge/GitHub-Stable%20Diffusion%20C++-181717?logo=github)](https://github.com/leejet/stable-diffusion.cpp) 
+
+[![Blog](https://img.shields.io/badge/Blog-Tensor%20Core%20MatMul-e91e63?logo=hashnode)](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) 
+[![Blog](https://img.shields.io/badge/Blog-MMA%20MatMul-2196f3?logo=medium)](https://www.spatters.ca/mma-matmul) 
+[![Blog](https://img.shields.io/badge/Blog-CUDA%20MatMul%20Optimization-00d4aa?logo=dev.to)](https://siboehm.com/articles/22/CUDA-MMM) 
+[![Substack](https://img.shields.io/badge/Substack-Outperforming%20cuBLAS-ff6b35?logo=substack)](https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog) 
+[![YouTube](https://img.shields.io/badge/YouTube-Outperforming%20cuBLAS-FF0000?logo=youtube)](https://www.youtube.com/watch?v=ErTmTCRP1_U) 
 
 ---
 
