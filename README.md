@@ -4,106 +4,22 @@ Welcome to my **100 Days of GPU** journey! This repository will serve as a publi
 
 The goal is to gain both theoretical and hands-on understanding of how GPUs work and how to fully leverage their power for high-performance computing.
 
+# Progress Table:  [![YouTube](https://img.shields.io/badge/YouTube-CS149-FF0000?logo=youtube)](https://www.youtube.com/playlist?list=PLoROMvodv4rMp7MTFr4hQsDEcX7Bx6Odp) [![YouTube](https://img.shields.io/badge/YouTube-PMPP-FF0000?logo=youtube)](https://www.youtube.com/playlist?list=PLRRuQYjFhpmubuwx-w8X964ofVkW1T8O4) [![CUDA](https://img.shields.io/badge/CUDA-C++%20Guide-76B900?logo=nvidia)](https://docs.nvidia.com/cuda/cuda-c-programming-guide/) [![PMPP](https://img.shields.io/badge/Book-PMPP-blue?logo=bookstack)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/materials/Wen-mei%20W.%20Hwu%2C%20David%20B.%20Kirk%2C%20Izzat%20El%20Hajj%20-%20Programming%20Massively%20Parallel%20Processors.%20A%20Hands-on%20Approach-Elsevier%20(2023).pdf) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/59ee47f2dc6a04fb79f8fa15d498a4bf/hello-world-in-cuda.ipynb) [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/xlite-dev/LeetCUDA)
+
+| Day | 📋 Topic | 🎯 Key Learning Areas | 💻 Implementation | 🔗 Links |
+|-----|----------|----------------------|-------------------|----------|
+| **001** | 🖥️ **CPU vs. GPU Architectures & Parallelism** | • Processor trends and Moore's Law<br/>• Latency vs. Throughput-oriented design<br/>• GPU evolution from graphics to general computing<br/>• Parallelization limitations | Theoretical study | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20001_%20GPU%20vs%20CPU%20architecture) |
+| **002** | 🏗️ **GPU Architecture Fundamentals** | • GPU architecture evolution (Fermi → Ampere)<br/>• Streaming Multiprocessors (SMs)<br/>• Warp execution and scheduling<br/>• Memory hierarchy (Shared, L1, L2)<br/>• Tensor Cores for matrix acceleration | First "Hello World" CUDA program | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20002_Hello_GPU) |
+| **003** | ➕ **Vector Addition** | • Data vs. Task parallelism<br/>• CUDA memory management (`cudaMalloc`, `cudaMemcpy`)<br/>• Kernel fundamentals and thread indexing<br/>• Error checking and synchronization<br/>• Function qualifiers (`__global__`, `__device__`) | Vector addition kernel | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20003_Vector_Addition)  |
+| **004** | 🌈 **Multidimensional Grids and Data** | • 2D/3D thread organization<br/>• Multidimensional indexing techniques<br/>• Converting 2D coordinates to linear memory<br/>• Boundary condition handling | RGB to Grayscale conversion | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20004_Multidimensional_Grids_and_Data) |
+| **005** | 🖼️ **Image Blur Processing & Performance** | • 3×3 average filter implementation<br/>• Memory transfer vs. computation analysis<br/>• Performance optimization strategies<br/>• Shared memory patterns | Image blur with performance analysis | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20005_Image_Blur) |
+| **006** | 🔢 **CUDA Programming Model & Matrix Multiplication** | • Scalable parallelism hierarchy<br/>• Grid Block Clusters and Thread Block Clusters<br/>• Asynchronous SIMT programming<br/>• Compute Capability features<br/>• Memory management techniques | Naive Matrix Multiplication | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20006_Naive_MatMul) |
+| **007** | 🧠 **L2 Cache and Shared Memory** | • L2 Cache control and architecture<br/>• Memory access pattern optimization<br/>• Hit ratio strategies<br/>• L2 cache reset options<br/>• Set-aside memory layout | Tiled Matrix Multiplication with shared memory | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20007_L2%20and%20Shared%20Memory) |
+| **008** | 🚄 **Memory Transfer Performance** | • Memory types (Pageable, Pinned, Unified)<br/>• Transfer bandwidth analysis<br/>• PCIe efficiency optimization<br/>• Async transfer techniques<br/>• Batching and memory pools | CUDA memory transfer benchmarking | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20008_Data_Transfer%20_Benchmark) |
+| **009** | 🔄 **Page-Locked Memory & Thread Coarsening** | • Page-locked host memory benefits<br/>• Portable and write-combining memory<br/>• Mapped memory techniques<br/>• Thread coarsening optimization strategies | Thread Coarsening Matrix Multiplication | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20009_Thread%20Coarsening) |
+| **010** | 🔄 **Memory Synchronization Domains** | • Memory fence interference handling<br/>• Traffic isolation with domains<br/>• Domain usage in CUDA<br/>• Introduction to Triton programming | Vector Addition with Triton | [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20010_Memory%20Synchronization%20Domains) |
+
 ---
-
-## 📅 Progress Log
-
-
-### ✅ Day 001: CPU vs. GPU Architectures & Parallelism [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20001_%20GPU%20vs%20CPU%20architecture)
-
-- Processor Trends and Evolution
-- Reviewed Moore’s Law and its impact on transistor scaling.
-- Compared Latency-Oriented Design (CPU) vs. Throughput-Oriented Design (GPU).
-- Deep dive into CPU and GPU design:
-- History of GPUs: From graphics to general-purpose computing.
-- Explored the limitations of parallelization.
-
-### ✅ Day 002:  GPU Architecture Fundamentals [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20002_Hello_GPU)
-
-- Wrote first 'Hello World' [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/59ee47f2dc6a04fb79f8fa15d498a4bf/hello-world-in-cuda.ipynb) programme in CUDA
-
-- Studied the evolution of GPU architectures: from Fermi → Kepler → Pascal → Volta → Turing → Ampere.
-- Learned about:
-  - SMs (Streaming Multiprocessors)
-  - Warp execution and scheduling
-  - CUDA threads, blocks, and grids
-  - Shared memory, L1, L2 caches
-  - Bank conflicts and memory coalescing
-  - Tensor Cores and their matrix-multiplication acceleration
-
-### ✅ Day 003: Vector Addition [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20003_Vector_Addition)
-
-* Implemented vector addition [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/0e86a95d1a010056c70ee1decdb2275e/vector-addition-in-cuda.ipynb) - the "Hello World!" of data parallel programming
-* Studied different types of parallelism:
-  * Task Parallelism vs Data Parallelism
-  * Why GPUs excel at data-parallel tasks
-* Learned about CUDA memory management:
-  * `cudaMalloc` for device memory allocation
-  * `cudaMemcpy` for host-device data transfers
-  * `cudaFree` for releasing GPU memory
-* Learned CUDA kernel fundamentals:
-  * Thread/block organization in grids
-  * Using thread indices with `blockDim.x*blockIdx.x + threadIdx.x`
-  * Handling boundary conditions with ceiling division
-* Implemented proper error checking with `cudaGetLastError()` and `cudaGetErrorString()`
-* Explored function qualifiers: `__global__`, `__device__`, and `__host__`
-* Learned about asynchronous kernel execution and synchronization
-
-### ✅ Day 004: Multidimensional Grids and Data [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20004_Multidimensional_Grids_and_Data)
-* Implemented RGB to Grayscale conversion [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/b28ce2e01b465c6e1dcf5124a540ac04/rgb2gray-in-cuda.ipynb) using 2D thread organization
-* Explored CUDA's multidimensional grid capabilities (up to 3D)
-* Learned key multidimensional indexing techniques:
-  * Using `blockIdx.{x,y}` and `threadIdx.{x,y}` for 2D addressing
-  * Converting between 2D coordinates and linear memory
-* Handled boundary conditions in multidimensional kernels
-* Fixed CUDA version mismatch on Google Colab
-
-### ✅ Day 005: Image Blur Processing & Performance Analysis [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20005_Image_Blur)
-* Implemented 3×3 average filter blur operation [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/e4363e9116a909dcde94013aac3d6bcd/image-blur-with-cuda.ipynb) using CUDA
-* Analyzed memory transfer vs. computation performance (H2D: 0.26ms, kernel: 0.30ms, D2H: 0.66ms)
-* Explored optimization strategies including shared memory and memory access patterns
-
-### ✅ Day 006: CUDA Programming Model & Runtime API [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20006_Naive_MatMul)
-* Explored CUDA's scalable parallelism with thread hierarchy (threads, blocks, grids)
-* Implemented Naive Matrix Multiplication [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20006_Naive_MatMul/matmul.cu)
-* Learned advanced features including Grid Block Clusters, Thread Block Clusters (9.0) and Asynchronous SIMT (8.0+)
-* Compute Capability (SM version): Features supported by the GPU hardware
-* Memory management techniques (linear, pitched, 3D) and their access patterns
-* Explored ways of accessing global variables
-
-### ✅ Day 007: L2 Cache and Shared memory [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20007_L2%20and%20Shared%20Memory)
-* Implemented tiled-Matrix Multiplication using Shared memory [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20007_L2%20and%20Shared%20Memory/matmul.cu)
-*  L2 Cache Control
-*  Memory Access Patterns
-*  L2 Cache Architecture
-*  Device Property Insights
-*  Hit Ratio Strategy
-*  L2 Cache Reset Options
-*  L2 Set-Aside Layout
-
-### ✅ Day 008: CUDA Memory Transfer Performance [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20008_Data_Transfer%20_Benchmark)
-* Implemented CUDA memory transfer optimizations using Pinned and Unified Memory [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20008_Data_Transfer%20_Benchmark/transfer_benchmarking.cu)
-* Understood Memory Types (Pageable, Pinned, Device, Unified)
-* Analyzed Transfer Bandwidths and PCIe Efficiency
-* Applied Async Transfer Techniques
-* Optimized with Batching and Memory Pools
-* Visualized Performance Bottlenecks
-
-### ✅ Day 009: Page-Locked Host Memory and Thread Coarsening [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20009_Thread%20Coarsening)
-* Impliemented Thread Coarsening Matrix Mulitplication [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20009_Thread%20Coarsening)
-* Page-Locked Host Memory
-* Portable Memory
-* Write-Combining Memory
-* Mapped Memory
-
-### ✅ Day 010: CUDA Memory Synchronization Domains [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/bikrammajhi/100-days-of-GPU/tree/main/Day%20010_Memory%20Synchronization%20Domains)
-* Implemented Vector Addition kernel using Triton [![View on GitHub](https://img.shields.io/badge/GitHub-Code-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20010_Memory%20Synchronization%20Domains/vec_add.py)
-* Memory Fence Interference
-* Isolating Traffic with Domains
-* Using Domains in CUDA
-
-
-
 
  
 
