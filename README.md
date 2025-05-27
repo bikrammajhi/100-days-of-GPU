@@ -4,6 +4,8 @@ Welcome to my **100 Days of GPU** journey! This repository will serve as a publi
 
 The goal is to gain both theoretical and hands-on understanding of how GPUs work and how to fully leverage their power for high-performance computing.
 
+🧑‍🏫 **Mentor**: [@hkproj](https://github.com/hkproj) | 📘 [100-days-of-gpu](https://github.com/hkproj/100-days-of-gpu)
+
 # Progress Table  
 [![YouTube](https://img.shields.io/badge/YouTube-CS149-FF0000?logo=youtube)](https://www.youtube.com/playlist?list=PLoROMvodv4rMp7MTFr4hQsDEcX7Bx6Odp) [![YouTube](https://img.shields.io/badge/YouTube-PMPP-FF0000?logo=youtube)](https://www.youtube.com/playlist?list=PLRRuQYjFhpmubuwx-w8X964ofVkW1T8O4) [![CUDA](https://img.shields.io/badge/CUDA-C++%20Guide-76B900?logo=nvidia)](https://docs.nvidia.com/cuda/cuda-c-programming-guide/) [![PMPP](https://img.shields.io/badge/Book-PMPP-blue?logo=bookstack)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/materials/Wen-mei%20W.%20Hwu%2C%20David%20B.%20Kirk%2C%20Izzat%20El%20Hajj%20-%20Programming%20Massively%20Parallel%20Processors.%20A%20Hands-on%20Approach-Elsevier%20(2023).pdf) [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/bikrammajhi/59ee47f2dc6a04fb79f8fa15d498a4bf/hello-world-in-cuda.ipynb) [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)](https://github.com/xlite-dev/LeetCUDA)
 
