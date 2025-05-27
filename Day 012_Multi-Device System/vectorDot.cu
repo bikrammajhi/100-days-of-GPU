@@ -99,6 +99,7 @@ int main() {
     int ThreadsPerBlock = 32;
     int blocksPerGrid = (N + ThreadsPerBlock - 1) / ThreadsPerBlock;
     vectorDot_kernel<<<blocksPerGrid, ThreadsPerBlock>>>(x_d, y_d, z_d, N);
+    cudaDeviceSynchronize();
 
     // -----------------------
     // Copy result back to host
