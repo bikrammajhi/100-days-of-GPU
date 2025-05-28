@@ -37,6 +37,10 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 [![Substack](https://img.shields.io/badge/Substack-Outperforming%20cuBLAS-ff6b35?logo=substack)](https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog) 
 [![YouTube](https://img.shields.io/badge/YouTube-Outperforming%20cuBLAS-FF0000?logo=youtube)](https://www.youtube.com/watch?v=ErTmTCRP1_U) 
 
+[![Blog](https://img.shields.io/badge/Blog-Optimizing%20LayerNorm-2196f3?logo=medium)](https://aryagxr.com/blogs/cuda-optimizing-layernorm)
+
+
+
 ---
 
  
