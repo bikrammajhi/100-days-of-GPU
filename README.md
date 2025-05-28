@@ -31,6 +31,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 [![GitHub](https://img.shields.io/badge/GitHub-LeetCUDA-181717?logo=github)](https://github.com/xlite-dev/LeetCUDA) [![GitHub](https://img.shields.io/badge/GitHub-CUDA%20Optimizations-181717?logo=github)](https://github.com/BBuf/how-to-optim-algorithm-in-cuda) [![Awesome](https://img.shields.io/badge/Awesome-CUDA%20&%20HPC-ff6b6b?logo=awesome-lists)](https://github.com/coderonion/awesome-cuda-and-hpc) [![Awesome](https://img.shields.io/badge/Awesome-DiT%20Inference-4ecdc4?logo=awesome-lists)](https://github.com/xlite-dev/Awesome-DiT-Inference) [![GitHub](https://img.shields.io/badge/GitHub-Stable%20Diffusion%20C++-181717?logo=github)](https://github.com/leejet/stable-diffusion.cpp) 
 
 [![Blog](https://img.shields.io/badge/Blog-Tensor%20Core%20MatMul-e91e63?logo=hashnode)](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) 
+[![Blog](https://img.shields.io/badge/Blog-CUDA%20Basics-2196f3?logo=medium)](https://tinkerd.net/blog/machine-learning/cuda-basics/#wrapping-up)
 [![Blog](https://img.shields.io/badge/Blog-MMA%20MatMul-2196f3?logo=medium)](https://www.spatters.ca/mma-matmul) 
 [![Blog](https://img.shields.io/badge/Blog-CUDA%20MatMul%20Optimization-00d4aa?logo=dev.to)](https://siboehm.com/articles/22/CUDA-MMM) 
 [![Substack](https://img.shields.io/badge/Substack-Outperforming%20cuBLAS-ff6b35?logo=substack)](https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog) 
