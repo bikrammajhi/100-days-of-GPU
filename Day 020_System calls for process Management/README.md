@@ -20,7 +20,7 @@ float *h_input = new float[N]; // N = 1024
 for (int i = 0; i < N; ++i) h_input[i] = 1.0f;
 ```
 
-* You're creating an array with all values = 1.
+* we're creating an array with all values = 1.
 * Expecting final sum = **1024.0**
 
 ---
@@ -31,7 +31,7 @@ for (int i = 0; i < N; ++i) h_input[i] = 1.0f;
 warp_shuffle_sum<<<blocks, threadsPerBlock, sharedMemSize>>>(...);
 ```
 
-* You launch the kernel with:
+* we launch the kernel with:
 
   * `threadsPerBlock = 256`
   * `N = 1024 → 4 blocks`
@@ -144,7 +144,7 @@ Each block writes its total = 256.0 to `d_output[]`.
 
 ### 🧠 Final Result on Host
 
-You had 4 blocks. So:
+we had 4 blocks. So:
 
 ```text
 h_partial = [256.0, 256.0, 256.0, 256.0]
