@@ -55,7 +55,7 @@ int main() {
     cudaMemcpy(d_input, h_input, N * sizeof(float), cudaMemcpyHostToDevice);
     
     // Shared memory size reduced - only need space for warp results
-    int sharedMemSize = (threadsPerBlock / warpSize) * sizeof(float);
+    int sharedMemSize = (threadsPerBlock / 32) * sizeof(float);
     warp_shuffle_sum<<<blocks, threadsPerBlock, sharedMemSize>>>(d_input, d_output, N);
     
     float *h_partial = new float[blocks];
