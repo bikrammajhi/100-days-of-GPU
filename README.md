@@ -43,6 +43,8 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 [![YouTube](https://img.shields.io/badge/YouTube-Outperforming%20cuBLAS-FF0000?logo=youtube)](https://www.youtube.com/watch?v=ErTmTCRP1_U) 
 
 [![Blog](https://img.shields.io/badge/Blog-Optimizing%20LayerNorm-2196f3?logo=medium)](https://aryagxr.com/blogs/cuda-optimizing-layernorm)
+[![Blog](https://img.shields.io/badge/Fast%20GPU%20Matrix%20Multiplication-2196f3?logo=medium)](https://seb-v.github.io/optimization/update/2025/01/20/Fast-GPU-Matrix-multiplication.html)
+
 
 
 
