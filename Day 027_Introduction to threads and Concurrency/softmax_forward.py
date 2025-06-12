@@ -1,3 +1,5 @@
+## Adapated From https://blog.nagi.fun/triton-intro-softmax?locale=en ##
+
 @triton.jit
 def _softmax_fwd_kernel(
     output_ptr,
