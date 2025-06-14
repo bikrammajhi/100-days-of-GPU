@@ -6,8 +6,9 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 
 🧑‍🏫 **Mentor**: [@hkproj](https://github.com/hkproj) | 📘 [100-days-of-gpu](https://github.com/hkproj/100-days-of-gpu)
 
+🌐 **GPU Programming Platform**:  [<img src="https://leetgpu.com/favicon.ico" width="20"/> **LeetGPU**](https://leetgpu.com/) &nbsp;&nbsp;  [<img src="https://tensara.org/favicon.ico" width="20"/> **Tensara**](https://tensara.org/) &nbsp;&nbsp;  [<img src="https://colab.research.google.com/favicon.ico" width="20"/> **Google Colab**](https://colab.research.google.com/gist/bikrammajhi/59ee47f2dc6a04fb79f8fa15d498a4bf/hello-world-in-cuda.ipynb/) &nbsp;&nbsp;  [<img src="https://www.kaggle.com/static/images/favicon.ico" width="20"/> **Kaggle**](https://www.kaggle.com/code/bikrammajhi22/hello-world)
 
-🌐 **GPU Programming Platform**:  [<img src="https://leetgpu.com/favicon.ico" width="20"/> **LeetGPU**](https://leetgpu.com/) &nbsp;&nbsp;    [<img src="https://tensara.org/favicon.ico" width="20"/> **Tensara**](https://tensara.org/)
+
 
 
 
