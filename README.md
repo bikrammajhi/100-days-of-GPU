@@ -1,4 +1,4 @@
-# 🚀 100 Days of GPU Challenge
+# ⚡🚀 100 Days of GPU Challenge 🎉🖥️
 
 Welcome to my **100 Days of GPU** journey! This repository will serve as a public log of my learning, experiments, and projects as I dive deep into the world of GPU architecture, CUDA programming, memory hierarchies, parallelism, and acceleration for deep learning and scientific computing.
 
