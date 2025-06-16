@@ -1,3 +1,5 @@
+# https://isamu-website.medium.com/understanding-triton-tutorials-part-2-f6839ce50ae7
+
 # -----------------------------------------------------------------------------
 # Dropout Implementation using Triton
 # -----------------------------------------------------------------------------
