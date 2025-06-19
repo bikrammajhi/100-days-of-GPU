@@ -59,6 +59,7 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 [![Blog](https://img.shields.io/badge/Blog-CUDA%20MatMul%20Optimization-00d4aa?logo=dev.to)](https://siboehm.com/articles/22/CUDA-MMM) 
 [![Substack](https://img.shields.io/badge/Substack-Outperforming%20cuBLAS-ff6b35?logo=substack)](https://cudaforfun.substack.com/p/outperforming-cublas-on-h100-a-worklog) 
 [![YouTube](https://img.shields.io/badge/YouTube-Outperforming%20cuBLAS-FF0000?logo=youtube)](https://www.youtube.com/watch?v=ErTmTCRP1_U) 
+[![GitHub](https://img.shields.io/badge/GitHub-Fast%20MatMuls%20%7C%20651%20TFLOPS%20on%20H100-181717?logo=github)](https://github.com/alexarmbr/fast-matmuls)
 
 [![Blog](https://img.shields.io/badge/Blog-Optimizing%20LayerNorm-2196f3?logo=medium)](https://aryagxr.com/blogs/cuda-optimizing-layernorm)
 [![Blog](https://img.shields.io/badge/Fast%20GPU%20Matrix%20Multiplication-2196f3?logo=medium)](https://seb-v.github.io/optimization/update/2025/01/20/Fast-GPU-Matrix-multiplication.html)
