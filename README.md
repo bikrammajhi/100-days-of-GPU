@@ -63,7 +63,8 @@ The goal is to gain both theoretical and hands-on understanding of how GPUs work
 [![Blog](https://img.shields.io/badge/Blog-Optimizing%20LayerNorm-2196f3?logo=medium)](https://aryagxr.com/blogs/cuda-optimizing-layernorm)
 [![Blog](https://img.shields.io/badge/Fast%20GPU%20Matrix%20Multiplication-2196f3?logo=medium)](https://seb-v.github.io/optimization/update/2025/01/20/Fast-GPU-Matrix-multiplication.html)
 
-
+[![GitHub](https://img.shields.io/badge/GitHub-CUDA%20HGEMM-181717?logo=github)](https://github.com/Bruce-Lee-LY/cuda_hgemm)
+[![Blog](https://img.shields.io/badge/Blog-Fabian%20Schuetze's%20GPU%20Articles-2196f3?logo=medium)](https://fabianschuetze.github.io/category/articles.html)
 
 
 ---
