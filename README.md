@@ -1,17 +1,34 @@
 # ⚡🚀 100 Days of GPU Challenge 🎉🖥️
 
-Welcome to my **100 Days of GPU** journey! This repository will serve as a public log of my learning, experiments, and projects as I dive deep into the world of GPU architecture, CUDA programming, memory hierarchies, parallelism, and acceleration for deep learning and scientific computing.
+Welcome to my **100 Days of GPU** journey!  
+This repository is a public log of my learning, experiments, and projects as I dive deep into the world of:
 
-The goal is to gain both theoretical and hands-on understanding of how GPUs work and how to fully leverage their power for high-performance computing.
+- GPU architecture  
+- CUDA programming  
+- Memory hierarchies  
+- Parallelism  
+- Acceleration for deep learning & scientific computing
 
-🧑‍🏫 **Mentor**: [@hkproj](https://github.com/hkproj) | 📘 [100-days-of-gpu](https://github.com/hkproj/100-days-of-gpu)
+🎯 The goal: Develop a strong theoretical and practical understanding of GPU-based high-performance computing.
 
-🌐 **GPU Programming Platform**:  [<img src="https://leetgpu.com/favicon.ico" width="20"/> **LeetGPU**](https://leetgpu.com/) &nbsp;&nbsp;  [<img src="https://tensara.org/favicon.ico" width="20"/> **Tensara**](https://tensara.org/) &nbsp;&nbsp;  [<img src="https://colab.research.google.com/favicon.ico" width="20"/> **Google Colab**](https://colab.research.google.com/gist/bikrammajhi/59ee47f2dc6a04fb79f8fa15d498a4bf/hello-world-in-cuda.ipynb/) &nbsp;&nbsp;  [<img src="https://www.kaggle.com/static/images/favicon.ico" width="20"/> **Kaggle**](https://www.kaggle.com/code/bikrammajhi22/hello-world)
+---
 
+## 🧑‍🏫 Mentor & Inspiration  
+- 👨‍🔬 **Mentor**: [@hkproj](https://github.com/hkproj)  
+- 📘 **Reference Repo**: [100-days-of-gpu](https://github.com/hkproj/100-days-of-gpu)
 
+## 🌐 GPU Programming Platforms  
 
+- [<img src="https://leetgpu.com/favicon.ico" width="18"/> **LeetGPU**](https://leetgpu.com/)  
+- [<img src="https://tensara.org/favicon.ico" width="18"/> **Tensara**](https://tensara.org/)  
+- [<img src="https://colab.research.google.com/favicon.ico" width="18"/> **Google Colab**](https://colab.research.google.com/gist/bikrammajhi/59ee47f2dc6a04fb79f8fa15d498a4bf/hello-world-in-cuda.ipynb)
 
+## 📓 My Kaggle Notebooks
 
+- [<img src="https://www.kaggle.com/static/images/favicon.ico" width="18"/> **Hello World – Starter Notebook**](https://www.kaggle.com/code/bikrammajhi22/hello-world)  
+- [<img src="https://www.kaggle.com/static/images/favicon.ico" width="18"/> **NVIDIA CUTLASS – Deep Dive**](https://www.kaggle.com/code/bikrammajhi22/nvidia-cutlas)
+
+---
 
 # Progress Table   
 [![YouTube](https://img.shields.io/badge/YouTube-CS149-FF0000?logo=youtube)](https://www.youtube.com/playlist?list=PLoROMvodv4rMp7MTFr4hQsDEcX7Bx6Odp) [![YouTube](https://img.shields.io/badge/YouTube-PMPP-FF0000?logo=youtube)](https://www.youtube.com/playlist?list=PLRRuQYjFhpmubuwx-w8X964ofVkW1T8O4) [![CUDA](https://img.shields.io/badge/CUDA-C++%20Guide-76B900?logo=nvidia)](https://docs.nvidia.com/cuda/cuda-c-programming-guide/) [![PMPP](https://img.shields.io/badge/Book-PMPP-blue?logo=bookstack)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/materials/Wen-mei%20W.%20Hwu%2C%20David%20B.%20Kirk%2C%20Izzat%20El%20Hajj%20-%20Programming%20Massively%20Parallel%20Processors.%20A%20Hands-on%20Approach-Elsevier%20(2023).pdf)  [![GitHub](https://img.shields.io/badge/GitHub-LeetCUDA-black?logo=github)](https://github.com/xlite-dev/LeetCUDA) [![Website](https://img.shields.io/badge/Website-Operating%20Systems-0A66C2?logo=Google%20Chrome&logoColor=white)](https://www.cse.iitb.ac.in/~mythili/os/) [![YouTube](https://img.shields.io/badge/YouTube-Operating%20Systems-FF0000?logo=youtube)](https://www.youtube.com/playlist?list=PLDW872573QAb4bj0URobvQTD41IV6gRkx) [![Website](https://img.shields.io/badge/Website-DECS-0A66C2?logo=Google%20Chrome&logoColor=white)](https://www.cse.iitb.ac.in/~mythili/decs/) [![YouTube](https://img.shields.io/badge/YouTube-DECS-FF0000?logo=youtube)](https://www.youtube.com/playlist?list=PLOzRYVm0a65dAAfy0d4aRtj5v0OCAvoCY) [![YouTube](https://img.shields.io/badge/YouTube-CUDA_Training_Series-FF0000?logo=youtube)](https://www.youtube.com/playlist?list=PL6RdenZrxrw-zNX7uuGppWETdxt_JxdMj)
