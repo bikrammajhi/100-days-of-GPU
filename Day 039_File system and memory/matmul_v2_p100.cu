@@ -1,4 +1,3 @@
-%%writefile sgemm.cu
 /*
  * GEMM Kernel with cuBLAS Benchmarking
  * Tests multiple matrix sizes: 512, 1024, 2048, 4096, 8192
