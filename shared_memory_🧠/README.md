@@ -1,4 +1,4 @@
-🧮 ### 📺 NVIDIA On-Demand Sessions and Blogs
+ ### 📺 NVIDIA On-Demand Sessions and Blogs
 
 A curated list of sessions and blog posts to level up your CUDA and Hopper GPU architecture knowledge.
 
