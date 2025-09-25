@@ -5,8 +5,10 @@ A curated list of sessions and blog posts to level up your CUDA and Hopper GPU a
 ---
 
 #### 🚀 CUDA Essentials
-
-- 🔧 [**CUDA: New Features and Beyond**](https://www.nvidia.com/en-us/on-demand/session/gtcfall22-a41100/)
+- 📚 [**CUDA Training Series**](https://www.youtube.com/playlist?list=PL6RdenZrxrw-zNX7uuGppWETdxt_JxdMj)
+- 🎥 [**How GPU Computing Works | GTC 2021**](https://youtu.be/3l10o0DYJXg)
+- 🧠 [**How CUDA Programming Works | GTC 2022**](https://youtu.be/n6M8R8-PlnE)
+- 🔧 [**CUDA: New Features and Beyond | GTC 2022**](https://www.nvidia.com/en-us/on-demand/session/gtcfall22-a41100/)
 - 🛠️ [**Enabling Hopper-Specific Optimizations in CUDA Applications**](https://www.nvidia.com/en-us/on-demand/session/gtcfall22-a41147/)
 - 🧱 [**CUDA Programming Model for Hopper Architecture**](https://www.nvidia.com/en-us/on-demand/session/gtcfall22-a41095/)
 - 📘 [**Introduction to CUDA Programming and Performance Optimization**](https://www.nvidia.com/en-us/on-demand/session/gtc24-s62191/)
