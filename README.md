@@ -12,6 +12,10 @@ This repository is a public log of my learning, experiments, and projects as I d
 🎯 The goal: Develop a strong theoretical and practical understanding of GPU-based high-performance computing.
 
 ---
+### 🧠📚 Stuff I’m Reading (or Should Be)
+
+- [**NVIDIA Tensor Core Evolution: From Volta to Blackwell**](https://newsletter.semianalysis.com/p/nvidia-tensor-core-evolution-from-volta-to-blackwell)
+---
 
 ## 🧑‍🏫 Mentor & Inspiration
 - 👨‍🔬 **Inspiration**: [@hkproj](https://github.com/hkproj), [Lei Mao](https://leimao.github.io/), [Bruce-Lee-LY](https://leimao.github.io/) 
