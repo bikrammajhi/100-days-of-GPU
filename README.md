@@ -28,6 +28,17 @@ This repository is a public log of my learning, experiments, and projects as I d
 - [<img src="https://www.kaggle.com/static/images/favicon.ico" width="18"/> **Hello World – Starter Notebook**](https://www.kaggle.com/code/bikrammajhi22/hello-world)  
 - [<img src="https://www.kaggle.com/static/images/favicon.ico" width="18"/> **NVIDIA CUTLASS – Deep Dive**](https://www.kaggle.com/code/bikrammajhi22/nvidia-cutlas)
 
+## ⚡ **Custom CUDA Kernels**
+
+> Optimized matrix-multiplication kernels benchmarked against cuBLAS.
+
+* 🧩 **Outperforming cuBLAS (121.06%)** on **Tesla T4 (non–Tensor Core)**
+  🔗 [View Gist](https://gist.github.com/bikrammajhi/1892de169821509c819761abd6bd758e)
+
+* ⚡ **Reaching 96% of cuBLAS performance** on **NVIDIA P100**
+  🔗 [View Gist](https://gist.github.com/bikrammajhi/372864a2a8abbed01fc977b4b0c125ed)
+
+---
 ---
 
 # Progress Table   
