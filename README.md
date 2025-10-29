@@ -12,9 +12,11 @@ This repository is a public log of my learning, experiments, and projects as I d
 🎯 The goal: Develop a strong theoretical and practical understanding of GPU-based high-performance computing.
 
 ---
-### 🧠📚 Stuff I’m Reading (or Should Be)
+## 🧠📚 Stuff I’m Reading (or Should Be)
 
 - [**NVIDIA Tensor Core Evolution: From Volta to Blackwell**](https://newsletter.semianalysis.com/p/nvidia-tensor-core-evolution-from-volta-to-blackwell)
+- [**Dissecting the NVIDIA Hopper Architecture through Microbenchmarking and Multiple Level Analysis**](https://arxiv.org/pdf/2501.12084v2)
+- [**The Ultra-Scale Playbook: Training LLMs on GPU Clusters**](https://huggingface.co/spaces/nanotron/ultrascale-playbook)
 ---
 
 ## 🧑‍🏫 Mentor & Inspiration
