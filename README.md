@@ -13,8 +13,8 @@ This repository is a public log of my learning, experiments, and projects as I d
 
 ---
 
-## 🧑‍🏫 Mentor & [Inspiration](https://leimao.github.io/)  
-- 👨‍🔬 **Mentor**: [@hkproj](https://github.com/hkproj)  
+## 🧑‍🏫 Mentor & Inspiration
+- 👨‍🔬 **Mentor**: [@hkproj](https://github.com/hkproj), [Lei Mao](https://leimao.github.io/), [Bruce-Lee-LY](https://leimao.github.io/) 
 - 📘 **Reference Repo**: [100-days-of-gpu](https://github.com/hkproj/100-days-of-gpu)
 
 ## 🌐 GPU Programming Platforms  
