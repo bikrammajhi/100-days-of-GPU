@@ -37,8 +37,6 @@ This repository is a public log of my learning, experiments, and projects as I d
 
 * ⚡ **Reaching 96% of cuBLAS performance** on **NVIDIA P100**
   🔗 [View Gist](https://gist.github.com/bikrammajhi/372864a2a8abbed01fc977b4b0c125ed)
-
----
 ---
 
 # Progress Table   
