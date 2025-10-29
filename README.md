@@ -15,6 +15,10 @@ This repository is a public log of my learning, experiments, and projects as I d
 ## 🧠📚 Stuff I’m Reading (or Should Be)
 
 - [**NVIDIA Tensor Core Evolution: From Volta to Blackwell**](https://newsletter.semianalysis.com/p/nvidia-tensor-core-evolution-from-volta-to-blackwell)
+- [**GB200 Hardware Architecture - Component Supply Chain & BOM**](https://newsletter.semianalysis.com/p/gb200-hardware-architecture-and-component)
+- [**Multi-Datacenter Training: OpenAI's Ambitious Plan To Beat Google's Infrastructure**](https://newsletter.semianalysis.com/p/multi-datacenter-training-openais)
+- [**100,000 H100 Clusters: Power, Network Topology, Ethernet vs InfiniBand, Reliability, Failures, Checkpointing**](https://newsletter.semianalysis.com/p/100000-h100-clusters-power-network)
+- [**Neural Network Quantization & Number Formats From First Principles**](https://newsletter.semianalysis.com/p/neural-network-quantization-and-number)
 - [**Dissecting the NVIDIA Hopper Architecture through Microbenchmarking and Multiple Level Analysis**](https://arxiv.org/pdf/2501.12084v2)
 - [**The Ultra-Scale Playbook: Training LLMs on GPU Clusters**](https://huggingface.co/spaces/nanotron/ultrascale-playbook)
 ---
