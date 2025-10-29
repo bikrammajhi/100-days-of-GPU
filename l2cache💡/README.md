@@ -46,9 +46,9 @@
 
 | Resource | Description | Focus Area |
 |----------|-------------|------------|
-| [![GitHub](https://img.shields.io/badge/GitHub-NVIDIA%20SGEMM%20Practice-181717?logo=github)](https://github.com/wangzyon/NVIDIA_SGEMM_PRACTICE) | 🔢 **SGEMM Implementation** | Matrix Multiplication |
+| [![GitHub](https://img.shields.io/badge/GitHub-wangzyon%20SGEMM%20RTX%203090-181717?logo=github)](https://github.com/wangzyon/NVIDIA_SGEMM_PRACTICE) | 🔢 **SGEMM Implementation** | Matrix Multiplication |
 | [![GitHub](https://img.shields.io/badge/GitHub-cugrad-181717?logo=github)](https://github.com/dmaivel/cugrad) | 🧠 **Automatic Differentiation** | Deep Learning Backend |
-| [![GitHub](https://img.shields.io/badge/GitHub-maxas%20SGEMM-181717?logo=github)](https://github.com/NervanaSystems/maxas/wiki/SGEMM) | 📐 **Assembly-level SGEMM** | Low-level Optimization |
+| [![GitHub](https://img.shields.io/badge/GitHub-maxas%20SGEMM-181717?logo=github)](https://github.com/NervanaSystems/maxas/wiki/SGEMM) | 📐 **Assembly-level SGEMM** | Assembler for NVIDIA Maxwell architecture |
 | [![GitHub](https://img.shields.io/badge/GitHub-CUDA%20Algorithm%20Optimization-181717?logo=github)](https://github.com/BBuf/how-to-optim-algorithm-in-cuda) | 🎯 **Algorithm Optimization** | Performance Tuning |
 | [![GitHub](https://img.shields.io/badge/GitHub-Tiny%20Flash%20Attention-181717?logo=github)](https://github.com/66RING/tiny-flash-attention) | ⚡ **Attention Mechanism** | Transformer Optimization |
 
@@ -137,18 +137,18 @@
 
 | Topic | Resource | Difficulty | GPU Focus |
 |-------|----------|------------|-----------|
-| **Tensor Cores** | [![Blog](https://img.shields.io/badge/Blog-Tensor%20Core%20MatMul-e91e63?logo=hashnode)](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) | 🔴 Advanced | H100/A100 |
-| **MMA Instructions** | [![Blog](https://img.shields.io/badge/Blog-MMA%20MatMul-2196f3?logo=medium)](https://www.spatters.ca/mma-matmul) | 🔴 Advanced | Modern GPUs |
-| **CUDA Optimization** | [![Blog](https://img.shields.io/badge/Blog-CUDA%20Matrix%20Multiplication%20Optimization-2196f3?logo=medium)](https://leimao.github.io/article/CUDA-Matrix-Multiplication-Optimization/) | 🟡 Intermediate | General |
-| **SGEMV Optimization** | [![Blog](https://img.shields.io/badge/Blog-Optimizing%20SGEMV%20CUDA-2196f3?logo=medium)](https://maharshi.bearblog.dev/optimizing-sgemv-cuda/) | 🟡 Intermediate | Vector Operations |
+| **Tensor Cores** | [![Blog](https://img.shields.io/badge/Blog-Alex%20%20Armbruster-e91e63?logo=hashnode)](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) | 🔴 Advanced | T4 (Tensor Core) |
+| **MMA Instructions** | [![Blog](https://img.shields.io/badge/Blog-Sam%20Patterson-2196f3?logo=medium)](https://www.spatters.ca/mma-matmul) | 🔴 Advanced | Ada Architecture |
+| **CUDA Optimization** | [![Blog](https://img.shields.io/badge/Blog-CUDA%20Lei%20Mao-2196f3?logo=medium)](https://leimao.github.io/article/CUDA-Matrix-Multiplication-Optimization/) | 🟡 Intermediate | General |
+| **SGEMV Optimization** | [![Blog](https://img.shields.io/badge/Blog-%20Maharshi's%20blog-2196f3?logo=medium)](https://maharshi.bearblog.dev/optimizing-sgemv-cuda/) | 🟢 Beginner | SGEMV |
 | **Softmax CUDA** | [![Blog](https://img.shields.io/badge/Blog-Optimizing%20Softmax%20CUDA-2196f3?logo=medium)](https://maharshi.bearblog.dev/optimizing-softmax-cuda/) | 🟡 Intermediate | Neural Networks |
-| **Fast GPU MatMul** | [![Blog](https://img.shields.io/badge/Blog-Fast%20GPU%20Matrix%20Multiplication-2196f3?logo=medium)](https://seb-v.github.io/optimization/update/2025/01/20/Fast-GPU-Matrix-multiplication.html) | 🟢 Beginner | General |
-| **SGEMM GPU** | [![Blog](https://img.shields.io/badge/Blog-SGEMM%20GPU%20Optimization-2196f3?logo=medium)](https://salykova.github.io/sgemm-gpu) | 🟡 Intermediate | Single Precision |
-| **SGEMM Notes** | [![Blog](https://img.shields.io/badge/Blog-CUDA%20SGEMM%20Optimization%20Notes-2196f3?logo=medium)](https://linn-ylz.com/Computer-Science/CUDA/CUDA-SGEMM-optimization-notes/) | 🟡 Intermediate | Detailed Analysis |
-| **FP32 GEMM** | [![Blog](https://img.shields.io/badge/Blog-CUDA%20GEMM%20FP32%20Optimization-2196f3?logo=medium)](https://code.hitori.moe/post/cuda-gemm-fp32-optimization/) | 🔴 Advanced | Float32 |
+| **Fast GPU MatMul** | [![Blog](https://img.shields.io/badge/Blog-Sebastien's%20Mat%20Mul%20-2196f3?logo=medium)](https://seb-v.github.io/optimization/update/2025/01/20/Fast-GPU-Matrix-multiplication.html) | 🟡 Intermediate | AMD RDNA3 GPU |
+| **SGEMM GPU** | [![Blog](https://img.shields.io/badge/Blog-Amanzhol%20Salykov%20-2196f3?logo=medium)](https://salykova.github.io/sgemm-gpu) | 🟡 Intermediate | FP32 |
+| **SGEMM Notes** | [![Blog](https://img.shields.io/badge/Blog-Linn's%20Shoka%20SGEMM%20Optimization%20Notes-2196f3?logo=medium)](https://linn-ylz.com/Computer-Science/CUDA/CUDA-SGEMM-optimization-notes/) | 🟡 Intermediate | Detailed Analysis |
+| **FP32 GEMM** | [![Blog](https://img.shields.io/badge/Blog-CUDA%20GEMM%20FP32%20Optimization-2196f3?logo=medium)](https://code.hitori.moe/post/cuda-gemm-fp32-optimization/) | 🟡 Intermediate | RTX 2080 Ti (11 GiB) @ 250W |
 | **Transpose Opt** | [![Blog](https://img.shields.io/badge/Blog-CUDA%20Transpose%20Optimization-2196f3?logo=medium)](https://code.hitori.moe/post/cuda-transpose-optimization/) | 🟡 Intermediate | Memory Access |
-| **GPU MatMul** | [![Blog](https://img.shields.io/badge/Blog-GPU%20Matrix%20Multiply-2196f3?logo=medium)](https://indii.org/blog/gpu-matrix-multiply/) | 🟢 Beginner | Educational |
-| **FP16 MMA** | [![Blog](https://img.shields.io/badge/Blog-Two%20Stage%20FP16%20MMA-2196f3?logo=medium)](https://www.spatters.ca/two-stage-fp16-mma) | 🔴 Advanced | Half Precision |
+| **GPU MatMul** | [![Blog](https://img.shields.io/badge/Blog-Lawrence%20Murray-2196f3?logo=medium)](https://indii.org/blog/gpu-matrix-multiply/) | 🟢 Beginner | Educational |
+| **FP16 MMA** | [![Blog](https://img.shields.io/badge/Blog-Two%20Stage%20FP16%20MMA-2196f3?logo=medium)](https://www.spatters.ca/two-stage-fp16-mma) | 🔴 Advanced | RTX 4090, FP16/32 |
 
 ---
 
