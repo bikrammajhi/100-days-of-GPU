@@ -13,7 +13,7 @@ This repository is a public log of my learning, experiments, and projects as I d
 
 ---
 
-## 🧑‍🏫 Mentor & Inspiration  
+## 🧑‍🏫 Mentor & [Inspiration](https://leimao.github.io/)  
 - 👨‍🔬 **Mentor**: [@hkproj](https://github.com/hkproj)  
 - 📘 **Reference Repo**: [100-days-of-gpu](https://github.com/hkproj/100-days-of-gpu)
 
