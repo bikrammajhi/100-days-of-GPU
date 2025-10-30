@@ -84,9 +84,58 @@ This repository is a public log of my learning, experiments, and projects as I d
 | **025** | ⚡ **Async Data Movement & Paging** | • Matrix multiplication with asynchronous data movement<br/>• Explored paging and demand paging | [![View on GitHub](https://img.shields.io/badge/GitHub-Async_MatMul-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20025_Paging%20and%20Demand%20Paging/asynch_matmul.cu) |
 | **026** | 🧹 **Memory Management** | • Memory allocation and free space handling<br/>• Optimized vector addition implementation | [![View on GitHub](https://img.shields.io/badge/GitHub-VecAdd_Optimized-black?logo=github&style=flat-square)](https://github.com/bikrammajhi/100-days-of-GPU/blob/main/Day%20026_Memory%20Allocation%20and%20Free%20space%20management/VecAdd.cu) |
 
+---
+
+# GPU Architecture & Tensor Core Research: A Collection of Key Papers
+
+A curated list of seminal and contemporary research papers focused on demystifying NVIDIA GPU architectures, particularly Tensor Cores, through microbenchmarking, performance analysis, and optimization techniques.
 
 
-# References:
+## 📚 Comprehensive Architecture Dissections
+
+These papers provide in-depth, experimental analysis of specific NVIDIA GPU architectures.
+
+| Architecture | Paper Title | Link | Key Focus |
+| :--- | :--- | :--- | :--- |
+| **Blackwell** | Dissecting the NVIDIA Blackwell Architecture with Microbenchmarks | [arXiv:2507.10789](https://arxiv.org/pdf/2507.10789) | Latest architecture analysis, second-generation Transformer Engine. |
+| **Hopper** | Benchmarking and Dissecting the Nvidia Hopper GPU Architecture | [arXiv:2402.13499](https://arxiv.org/pdf/2402.13499) | H100 GPU, Tensor Memory Accelerator (TMA), new Tensor Core design. |
+| **Ampere** | Demystifying the Nvidia Ampere Architecture through Microbenchmarking and Instruction-level Analysis | [arXiv:2208.11174](https://arxiv.org/pdf/2208.11174) | A100 GPU, third-generation Tensor Cores, memory hierarchy, and new instructions. |
+| **Volta** | Dissecting the NVIDIA Volta GPU Architecture via Microbenchmarking | [arXiv:1804.06826](https://arxiv.org/pdf/1804.06826) | Foundational analysis of the first architecture to introduce Tensor Cores. |
+
+## 🎯 Tensor Core Deep Dives
+
+Focused studies on the behavior, programmability, and performance of NVIDIA's Tensor Cores.
+
+| Paper Title | Architecture | Link | Key Focus |
+| :--- | :--- | :--- | :--- |
+| Dissecting Tensor Cores via Microbenchmarks: Latency, Throughput and Numeric Behaviors | General | [arXiv:2206.02874](https://arxiv.org/pdf/2206.02874) | Comprehensive low-level analysis of Tensor Core operation and numeric precision. |
+| Demystifying Tensor Cores to Optimize Half-Precision Matrix Multiply | T4 (Turing) | [Paper Link](https://www.cse.ust.hk/~weiwa/papers/yan-ipdps20.pdf) | Practical optimization strategies for half-precision (FP16) on Turing Tensor Cores. |
+| NVIDIA Tensor Core Programmability, Performance & Precision | V100 (Volta) | [arXiv:1803.04014](https://arxiv.org/pdf/1803.04014) | Early exploration of Tensor Core programmability and precision on the V100. |
+| Accelerating ML Workloads using GPU Tensor Cores: The Good, the Bad, and the Ugly | A100 (Ampere) | [ACM Digital Library](https://dl.acm.org/doi/pdf/10.1145/3629526.36538) | Empirical study on the practical benefits and challenges of using Tensor Cores for ML. |
+
+## 🛠️ Optimization & Broader Perspectives
+
+Papers covering general optimization techniques and the historical context of GPU computing for deep learning.
+
+| Paper Title | Link | Description |
+| :--- | :--- | :--- |
+| Optimization Techniques for GPU Programming | [ACM Digital Library](https://dl.acm.org/doi/10.1145/3570638) | A survey of modern GPU optimization strategies applicable across architectures. |
+| A Journey of a 1,000 Kernels Begins with a Single Step: A Retrospective of Deep Learning on GPUs | [ACM Digital Library](https://dl.acm.org/doi/pdf/10.1145/3620665.3640367) | A historical perspective on the co-evolution of deep learning models and GPU hardware. |
+
+---
+
+## 📈 Chronological Evolution (Architecture-Focused)
+
+To visualize the progression of research:
+1.  **Volta (2017):** [1803.04014](https://arxiv.org/pdf/1803.04014), [1804.06826](https://arxiv.org/pdf/1804.06826)
+2.  **Turing (2018):** [yan-ipdps20.pdf](https://www.cse.ust.hk/~weiwa/papers/yan-ipdps20.pdf)
+3.  **Ampere (2020):** [2208.11174](https://arxiv.org/pdf/2208.11174), [10.1145/3629526.36538](https://dl.acm.org/doi/pdf/10.1145/3629526.36538)
+4.  **General Tensor Core (2022):** [2206.02874](https://arxiv.org/pdf/2206.02874)
+5.  **Hopper (2022):** [2402.13499](https://arxiv.org/pdf/2402.13499)
+6.  **Blackwell (2024):** [2507.10789](https://arxiv.org/pdf/2507.10789)
+
+
+# 📖 Learning Resources & Codebases
 [![GitHub](https://img.shields.io/badge/GitHub-LeetCUDA-181717?logo=github)](https://github.com/xlite-dev/LeetCUDA) [![GitHub](https://img.shields.io/badge/GitHub-CUDA%20Optimizations-181717?logo=github)](https://github.com/BBuf/how-to-optim-algorithm-in-cuda) [![Awesome](https://img.shields.io/badge/Awesome-CUDA%20&%20HPC-ff6b6b?logo=awesome-lists)](https://github.com/coderonion/awesome-cuda-and-hpc) [![Awesome](https://img.shields.io/badge/Awesome-DiT%20Inference-4ecdc4?logo=awesome-lists)](https://github.com/xlite-dev/Awesome-DiT-Inference) [![GitHub](https://img.shields.io/badge/GitHub-Stable%20Diffusion%20C++-181717?logo=github)](https://github.com/leejet/stable-diffusion.cpp) 
 
 [![Blog](https://img.shields.io/badge/Blog-Tensor%20Core%20MatMul-e91e63?logo=hashnode)](https://alexarmbr.github.io/2024/08/10/How-To-Write-A-Fast-Matrix-Multiplication-From-Scratch-With-Tensor-Cores.html) 
