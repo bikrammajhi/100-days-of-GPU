@@ -90,22 +90,21 @@ This repository is a public log of my learning, experiments, and projects as I d
 
 A curated list of seminal and contemporary research papers focused on demystifying NVIDIA GPU architectures, particularly Tensor Cores, through microbenchmarking, performance analysis, and optimization techniques.
 
-
 ## 📚 Comprehensive Architecture Dissections
 
-These papers provide in-depth, experimental analysis of specific NVIDIA GPU architectures.
+Experimental studies that reverse-engineer and benchmark NVIDIA GPU architectures across generations.
 
-| Architecture                                | Paper Title                                                                                          | Link                                                                          | Key Focus                                                                                                                       |
-| :------------------------------------------ | :--------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
-| **Pascal / older (Fermi, Kepler, Maxwell)** | Dissecting GPU Memory Hierarchy through Microbenchmarking – *Xinxin Mei & Xiaowen Chu*               | [arXiv:1509.02308](https://arxiv.org/abs/1509.02308)                          | Microbenchmarking of memory hierarchies (caches, TLBs, shared/global memory) across Fermi, Kepler, Maxwell generations.         |
-| **Volta**                                   | Dissecting the NVIDIA Volta GPU Architecture via Microbenchmarking                                   | [arXiv:1804.06826](https://arxiv.org/pdf/1804.06826)                          | Foundational analysis of the first architecture to introduce Tensor Cores.                                                      |
-| **Turing**                                  | Dissecting the NVIDIA Turing T4 GPU via Microbenchmarking                                            | [arXiv:1903.07486](https://arxiv.org/pdf/1903.07486)                          | T4 GPU, Tensor Core improvements, power efficiency, and cache behavior analysis.                                                |
-| **Ampere**                                  | Demystifying the Nvidia Ampere Architecture through Microbenchmarking and Instruction-level Analysis | [arXiv:2208.11174](https://arxiv.org/pdf/2208.11174)                          | A100 GPU, third-generation Tensor Cores, memory hierarchy, and new instructions.                                                |
-| **Hopper**                                  | Benchmarking and Dissecting the Nvidia Hopper GPU Architecture                                       | [arXiv:2402.13499](https://arxiv.org/pdf/2402.13499)                          | H100 GPU, Tensor Memory Accelerator (TMA), new Tensor Core design.                                                              |
-| **Hopper**                                  | Dissecting the NVIDIA Hopper Architecture through Microbenchmarking and Multiple Level Analysis      | [arXiv:2501.12084](https://arxiv.org/pdf/2501.12084)                          | Extended microbenchmarking of Hopper with multi-level analysis across SMs, memory, and Tensor operations.                       |
-| **Blackwell**                               | Dissecting the NVIDIA Blackwell Architecture with Microbenchmarks                                    | [arXiv:2507.10789](https://arxiv.org/pdf/2507.10789)                          | Latest architecture analysis, second-generation Transformer Engine.                                                             |
-| **Multi-architecture Modelling**            | Dissecting and Modeling the Architecture of Modern GPU Cores – *Rodrigo Huerta Gañán et al.*         | [DOI:10.1145/3725843.3756041](https://dl.acm.org/doi/10.1145/3725843.3756041) | Reverse-engineering and modeling modern NVIDIA GPU cores (issue logic, register file cache, pipelines) for simulation accuracy. |
-
+| **Architecture** | **Paper Title** | **Link** | **Key Focus** |
+| :---------------- | :-------------- | :------- | :------------- |
+| **Pascal / Older (Fermi, Kepler, Maxwell)** | Dissecting GPU Memory Hierarchy through Microbenchmarking – *Xinxin Mei & Xiaowen Chu* | [arXiv:1509.02308](https://arxiv.org/abs/1509.02308) | Microbenchmarking GPU memory hierarchies — caches, TLBs, and shared/global memory. |
+| **Volta** | Dissecting the NVIDIA Volta GPU Architecture via Microbenchmarking | [arXiv:1804.06826](https://arxiv.org/pdf/1804.06826) | First architecture with Tensor Cores — detailed SM and memory hierarchy analysis. |
+| **Turing** | Dissecting the NVIDIA Turing T4 GPU via Microbenchmarking | [arXiv:1903.07486](https://arxiv.org/pdf/1903.07486) | T4 GPU, Tensor Core efficiency, cache behavior, and performance tuning. |
+| **Ampere** | Demystifying the NVIDIA Ampere Architecture through Microbenchmarking and Instruction-level Analysis | [arXiv:2208.11174](https://arxiv.org/pdf/2208.11174) | A100 GPU, 3rd-gen Tensor Cores, cache/memory hierarchy, and new instructions. |
+| **Ampere** | Dissecting the Ampere GPU Architecture through Microbenchmarking | [NVIDIA GTC Talk (S33322)](https://www.nvidia.com/en-us/on-demand/session/gtcspring21-s33322/) | A100 microarchitecture — L2 cache partitioning, atomics, memory latency, and sparse matrix performance. |
+| **Hopper** | Benchmarking and Dissecting the NVIDIA Hopper GPU Architecture | [arXiv:2402.13499](https://arxiv.org/pdf/2402.13499) | H100 GPU, Tensor Memory Accelerator (TMA), new Tensor Core design. |
+| **Hopper** | Dissecting the NVIDIA Hopper Architecture through Microbenchmarking and Multi-level Analysis | [arXiv:2501.12084](https://arxiv.org/pdf/2501.12084) | Extended Hopper study — SM, Tensor Core, and memory subsystem analysis. |
+| **Blackwell** | Dissecting the NVIDIA Blackwell Architecture with Microbenchmarks | [arXiv:2507.10789](https://arxiv.org/pdf/2507.10789) | Next-gen GPU with 2nd-gen Transformer Engine and evolved memory hierarchy. |
+| **Multi-architecture Modeling** | Dissecting and Modeling the Architecture of Modern GPU Cores – *Rodrigo Huerta Gañán et al.* | [DOI:10.1145/3725843.3756041](https://dl.acm.org/doi/10.1145/3725843.3756041) | Reverse-engineering GPU core pipelines, issue logic, and register file caching for accurate simulation models. |
 
 ## 🎯 Tensor Core Deep Dives
 
