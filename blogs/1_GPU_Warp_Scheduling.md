@@ -1,22 +1,5 @@
 ## 🏭 GPU Warp Scheduling: The 4-Factory System
-
-### 🏭 GPU Warp Scheduling: The 4-Lane Highway
-🧠 The Big Picture
-Imagine the GPU's streaming multiprocessor (SM) as a 4-lane highway with each lane having its own traffic controller (scheduler). Each warp (group of 32 threads) is a truck that must choose one lane.
-
-### 🧩 Key Points
-
-- The Turing SM is divided into 4 processing blocks, each with its own warp scheduler and dispatch unit.
-
-- Warps are assigned to a processing block (and thus a scheduler) based on the rule: scheduler_id = warp_id % 4.
-
-- This means that warps with the same index modulo 4 (like warp 0 and warp 4, warp 1 and warp 5, etc.) are handled by the same scheduler.
-
-- If two active warps are assigned to the same scheduler, they cannot run simultaneously and performance drops.
-
-- When two warps have indices that are congruent modulo 4 (e.g., 0 and 4, 1 and 5, etc.), the aggregate performance (in GFLOPS) is lower because they are using the same scheduler and cannot be issued simultaneously.
-
-Therefore, to fully utilize the GPU, we need to have warps that are distributed across all four schedulers. This means that a block of threads must have at least 128 threads (which is 4 warps, since each warp has 32 threads) to use all four schedulers.
+Imagine each GPU streaming multiprocessor (SM) as a **factory with 4 separate production lines**. Each line has its own manager and can work independently!
 
 ---
 
@@ -94,3 +77,23 @@ Minimum Threads Needed = 128 threads
 **Bottom line: Don't let your warps fight over factory lines - give each scheduler its own work to do!** 🏭✨
 
 **Remember: 128 threads = 4 warps = 4 happy schedulers = Maximum performance!** 🎯
+
+------
+
+## 🏭 GPU Warp Scheduling: The 4-Lane Highway
+🧠 The Big Picture
+Imagine the GPU's streaming multiprocessor (SM) as a 4-lane highway with each lane having its own traffic controller (scheduler). Each warp (group of 32 threads) is a truck that must choose one lane.
+
+### 🧩 Key Points
+
+- The Turing SM is divided into 4 processing blocks, each with its own warp scheduler and dispatch unit.
+
+- Warps are assigned to a processing block (and thus a scheduler) based on the rule: scheduler_id = warp_id % 4.
+
+- This means that warps with the same index modulo 4 (like warp 0 and warp 4, warp 1 and warp 5, etc.) are handled by the same scheduler.
+
+- If two active warps are assigned to the same scheduler, they cannot run simultaneously and performance drops.
+
+- When two warps have indices that are congruent modulo 4 (e.g., 0 and 4, 1 and 5, etc.), the aggregate performance (in GFLOPS) is lower because they are using the same scheduler and cannot be issued simultaneously.
+
+Therefore, to fully utilize the GPU, we need to have warps that are distributed across all four schedulers. This means that a block of threads must have at least 128 threads (which is 4 warps, since each warp has 32 threads) to use all four schedulers.
