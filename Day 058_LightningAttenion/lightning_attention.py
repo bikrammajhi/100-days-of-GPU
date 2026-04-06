@@ -3,7 +3,7 @@
 import torch, triton, triton.language as tl, time, sys
 
 # ============================================================================
-# Official PyTorch Reference Implementation 
+# PyTorch Reference Implementation 
 # ============================================================================
 def get_mask(n, slope=1):
     mask = torch.triu(torch.zeros(n, n).float().fill_(float("-inf")), 1)
@@ -34,7 +34,7 @@ def linear_attn_pytorch(q, k, v, s=None):
     return torch.matmul(qk, v)
 
 # ============================================================================
-# Official Triton Implementation 
+# Triton Implementation 
 # ============================================================================
 @triton.jit
 def _fwd_kernel(Q, K, V, Out, b: tl.constexpr, h: tl.constexpr, n: tl.constexpr, d: tl.constexpr, e: tl.constexpr, BLOCK: tl.constexpr, NUM_BLOCK: tl.constexpr, BLOCK_MODEL: tl.constexpr):
